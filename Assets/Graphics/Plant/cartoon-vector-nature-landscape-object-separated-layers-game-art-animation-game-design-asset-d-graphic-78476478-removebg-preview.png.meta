@@ -1,0 +1,298 @@
+fileFormatVersion: 2
+guid: 2c7922dabf8ebea41bd86b648da66302
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: cartoon-vector-nature-landscape-object-separated-layers-game-art-animation-game-design-asset-d-graphic-78476478-removebg-preview_0
+    21300002: cartoon-vector-nature-landscape-object-separated-layers-game-art-animation-game-design-asset-d-graphic-78476478-removebg-preview_1
+    21300004: cartoon-vector-nature-landscape-object-separated-layers-game-art-animation-game-design-asset-d-graphic-78476478-removebg-preview_2
+    21300006: cartoon-vector-nature-landscape-object-separated-layers-game-art-animation-game-design-asset-d-graphic-78476478-removebg-preview_3
+    21300008: cartoon-vector-nature-landscape-object-separated-layers-game-art-animation-game-design-asset-d-graphic-78476478-removebg-preview_4
+    21300010: cartoon-vector-nature-landscape-object-separated-layers-game-art-animation-game-design-asset-d-graphic-78476478-removebg-preview_5
+    21300012: cartoon-vector-nature-landscape-object-separated-layers-game-art-animation-game-design-asset-d-graphic-78476478-removebg-preview_6
+    21300014: cartoon-vector-nature-landscape-object-separated-layers-game-art-animation-game-design-asset-d-graphic-78476478-removebg-preview_7
+    21300016: cartoon-vector-nature-landscape-object-separated-layers-game-art-animation-game-design-asset-d-graphic-78476478-removebg-preview_8
+    21300018: cartoon-vector-nature-landscape-object-separated-layers-game-art-animation-game-design-asset-d-graphic-78476478-removebg-preview_9
+  externalObjects: {}
+  serializedVersion: 9
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 15
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: cartoon-vector-nature-landscape-object-separated-layers-game-art-animation-game-design-asset-d-graphic-78476478-removebg-preview_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 269
+        width: 192
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65b3dbf3decb1404d9a1901cda50e9f7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartoon-vector-nature-landscape-object-separated-layers-game-art-animation-game-design-asset-d-graphic-78476478-removebg-preview_1
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 269
+        width: 161
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0730d4d6b515ec74088156bf670ba7bb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartoon-vector-nature-landscape-object-separated-layers-game-art-animation-game-design-asset-d-graphic-78476478-removebg-preview_2
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 267
+        width: 200
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb0ac5829d3a8e1429c708cc2ee8b0f6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartoon-vector-nature-landscape-object-separated-layers-game-art-animation-game-design-asset-d-graphic-78476478-removebg-preview_3
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 62
+        width: 176
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68047934eabec4645b363474d4be287b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartoon-vector-nature-landscape-object-separated-layers-game-art-animation-game-design-asset-d-graphic-78476478-removebg-preview_4
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 162
+        width: 81
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbebb0c3028f21342b16aff18ddcb95e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartoon-vector-nature-landscape-object-separated-layers-game-art-animation-game-design-asset-d-graphic-78476478-removebg-preview_5
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 168
+        width: 47
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b3c8e4e309a8ef458cf47b421ebfe56
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartoon-vector-nature-landscape-object-separated-layers-game-art-animation-game-design-asset-d-graphic-78476478-removebg-preview_6
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 171
+        width: 60
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9be2a0174a34254e8b61ee820dd1462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartoon-vector-nature-landscape-object-separated-layers-game-art-animation-game-design-asset-d-graphic-78476478-removebg-preview_7
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 168
+        width: 61
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e612086f1ba57a43a15f21aa0ed21e3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartoon-vector-nature-landscape-object-separated-layers-game-art-animation-game-design-asset-d-graphic-78476478-removebg-preview_8
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 66
+        width: 91
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf39aae5d03d47c418961389e8b23754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartoon-vector-nature-landscape-object-separated-layers-game-art-animation-game-design-asset-d-graphic-78476478-removebg-preview_9
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 67
+        width: 237
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d3cece3ae5bc2f438662a72bcae8e25
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 4c60da67ed8f66c4689420a044b9c0f6
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
