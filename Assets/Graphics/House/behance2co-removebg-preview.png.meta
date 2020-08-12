@@ -1,12 +1,10 @@
 fileFormatVersion: 2
 guid: 7e0ffa10240bb674981d8cb2172b22c8
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 21300000
-    second: house4
+  fileIDToRecycleName:
+    21300000: house4
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 9
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -60,9 +58,8 @@ TextureImporter:
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
-  applyGammaDecoding: 1
   platformSettings:
-  - serializedVersion: 3
+  - serializedVersion: 2
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -73,7 +70,6 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -93,7 +89,6 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: dccb21e2e4a1bc243a021edb95f99c75
-      internalID: 21300000
       vertices: []
       indices: 
       edges: []
@@ -102,12 +97,10 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 2aac5dcc6cb09f24387ebcc0238e3e19
-    internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
-    secondaryTextures: []
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
