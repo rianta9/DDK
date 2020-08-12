@@ -1,39 +1,19 @@
 fileFormatVersion: 2
 guid: 2c7922dabf8ebea41bd86b648da66302
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 21300000
-    second: cartoon-vector-nature-landscape-object-separated-layers-game-art-animation-game-design-asset-d-graphic-78476478-removebg-preview_0
-  - first:
-      213: 21300002
-    second: cartoon-vector-nature-landscape-object-separated-layers-game-art-animation-game-design-asset-d-graphic-78476478-removebg-preview_1
-  - first:
-      213: 21300004
-    second: cartoon-vector-nature-landscape-object-separated-layers-game-art-animation-game-design-asset-d-graphic-78476478-removebg-preview_2
-  - first:
-      213: 21300006
-    second: cartoon-vector-nature-landscape-object-separated-layers-game-art-animation-game-design-asset-d-graphic-78476478-removebg-preview_3
-  - first:
-      213: 21300008
-    second: cartoon-vector-nature-landscape-object-separated-layers-game-art-animation-game-design-asset-d-graphic-78476478-removebg-preview_4
-  - first:
-      213: 21300010
-    second: cartoon-vector-nature-landscape-object-separated-layers-game-art-animation-game-design-asset-d-graphic-78476478-removebg-preview_5
-  - first:
-      213: 21300012
-    second: cartoon-vector-nature-landscape-object-separated-layers-game-art-animation-game-design-asset-d-graphic-78476478-removebg-preview_6
-  - first:
-      213: 21300014
-    second: cartoon-vector-nature-landscape-object-separated-layers-game-art-animation-game-design-asset-d-graphic-78476478-removebg-preview_7
-  - first:
-      213: 21300016
-    second: cartoon-vector-nature-landscape-object-separated-layers-game-art-animation-game-design-asset-d-graphic-78476478-removebg-preview_8
-  - first:
-      213: 21300018
-    second: cartoon-vector-nature-landscape-object-separated-layers-game-art-animation-game-design-asset-d-graphic-78476478-removebg-preview_9
+  fileIDToRecycleName:
+    21300000: cartoon-vector-nature-landscape-object-separated-layers-game-art-animation-game-design-asset-d-graphic-78476478-removebg-preview_0
+    21300002: cartoon-vector-nature-landscape-object-separated-layers-game-art-animation-game-design-asset-d-graphic-78476478-removebg-preview_1
+    21300004: cartoon-vector-nature-landscape-object-separated-layers-game-art-animation-game-design-asset-d-graphic-78476478-removebg-preview_2
+    21300006: cartoon-vector-nature-landscape-object-separated-layers-game-art-animation-game-design-asset-d-graphic-78476478-removebg-preview_3
+    21300008: cartoon-vector-nature-landscape-object-separated-layers-game-art-animation-game-design-asset-d-graphic-78476478-removebg-preview_4
+    21300010: cartoon-vector-nature-landscape-object-separated-layers-game-art-animation-game-design-asset-d-graphic-78476478-removebg-preview_5
+    21300012: cartoon-vector-nature-landscape-object-separated-layers-game-art-animation-game-design-asset-d-graphic-78476478-removebg-preview_6
+    21300014: cartoon-vector-nature-landscape-object-separated-layers-game-art-animation-game-design-asset-d-graphic-78476478-removebg-preview_7
+    21300016: cartoon-vector-nature-landscape-object-separated-layers-game-art-animation-game-design-asset-d-graphic-78476478-removebg-preview_8
+    21300018: cartoon-vector-nature-landscape-object-separated-layers-game-art-animation-game-design-asset-d-graphic-78476478-removebg-preview_9
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 9
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -87,9 +67,8 @@ TextureImporter:
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
-  applyGammaDecoding: 1
   platformSettings:
-  - serializedVersion: 3
+  - serializedVersion: 2
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -100,7 +79,6 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -120,7 +98,6 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 65b3dbf3decb1404d9a1901cda50e9f7
-      internalID: 21300000
       vertices: []
       indices: 
       edges: []
@@ -141,7 +118,6 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 0730d4d6b515ec74088156bf670ba7bb
-      internalID: 21300002
       vertices: []
       indices: 
       edges: []
@@ -162,7 +138,6 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: eb0ac5829d3a8e1429c708cc2ee8b0f6
-      internalID: 21300004
       vertices: []
       indices: 
       edges: []
@@ -183,7 +158,6 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 68047934eabec4645b363474d4be287b
-      internalID: 21300006
       vertices: []
       indices: 
       edges: []
@@ -204,7 +178,6 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: bbebb0c3028f21342b16aff18ddcb95e
-      internalID: 21300008
       vertices: []
       indices: 
       edges: []
@@ -225,7 +198,6 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 6b3c8e4e309a8ef458cf47b421ebfe56
-      internalID: 21300010
       vertices: []
       indices: 
       edges: []
@@ -246,7 +218,6 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: b9be2a0174a34254e8b61ee820dd1462
-      internalID: 21300012
       vertices: []
       indices: 
       edges: []
@@ -267,7 +238,6 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 3e612086f1ba57a43a15f21aa0ed21e3
-      internalID: 21300014
       vertices: []
       indices: 
       edges: []
@@ -288,7 +258,6 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: bf39aae5d03d47c418961389e8b23754
-      internalID: 21300016
       vertices: []
       indices: 
       edges: []
@@ -309,7 +278,6 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 0d3cece3ae5bc2f438662a72bcae8e25
-      internalID: 21300018
       vertices: []
       indices: 
       edges: []
@@ -318,12 +286,10 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 4c60da67ed8f66c4689420a044b9c0f6
-    internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
-    secondaryTextures: []
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
