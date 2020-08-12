@@ -4,6 +4,7 @@ TextureImporter:
   fileIDToRecycleName:
     21300000: waterfall2_0
     21300002: waterfall2_1
+<<<<<<< HEAD
     21300004: waterfall2_3
     21300006: waterfall2_4
     21300008: waterfall2_6
@@ -16,6 +17,23 @@ TextureImporter:
     21300022: waterfall2_14
     21300024: waterfall2_15
     21300026: waterfall2_16
+=======
+    21300004: waterfall2_2
+    21300006: waterfall2_3
+    21300008: waterfall2_4
+    21300010: waterfall2_6
+    21300012: waterfall2_7
+    21300014: waterfall2_8
+    21300016: waterfall2_9
+    21300018: waterfall2_10
+    21300020: waterfall2_11
+    21300022: waterfall2_5
+    21300024: waterfall2_12
+    21300026: waterfall2_13
+    21300028: waterfall2_14
+    21300030: waterfall2_15
+    21300032: waterfall2_16
+>>>>>>> e96302e9a32a206e6251f0c0627d977f0ddb5581
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
