@@ -1,13 +1,11 @@
 fileFormatVersion: 2
-guid: 2873c282224a77c41a9d83b45ce3de2a
+guid: 20b6111107977e84a9f4e79534c9f696
 TextureImporter:
   fileIDToRecycleName:
-    21300000: rock_0
-    21300002: rock_1
-    21300004: rock_3
-    21300006: rock_4
-    21300008: rock_5
-    21300010: rock_6
+    21300000: wall_0
+    21300002: wall_1
+    21300004: wall_2
+    21300006: wall_3
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -79,13 +77,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: rock_0
+      name: wall_0
       rect:
         serializedVersion: 2
-        x: 11
-        y: 227
-        width: 176
-        height: 191
+        x: 17
+        y: 399
+        width: 462
+        height: 82
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -93,19 +91,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: efd9aca23badc414e955b94467983a28
+      spriteID: aa5269d1071c6e4408d7a11d2b9c4c00
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rock_1
+      name: wall_1
       rect:
         serializedVersion: 2
-        x: 190
-        y: 251
-        width: 153
-        height: 120
+        x: 81
+        y: 281
+        width: 311
+        height: 73
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -113,19 +111,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6256cb7edb5fcc34195d780dc1f2da66
+      spriteID: 08aaf3122c604c342bb6bc2cf435bcba
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rock_3
+      name: wall_2
       rect:
         serializedVersion: 2
-        x: 344
-        y: 199
-        width: 174
-        height: 179
+        x: 124
+        y: 159
+        width: 218
+        height: 82
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -133,19 +131,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3432d7ffb3c1db94091bcc20f97c4110
+      spriteID: d8e21e2d6a2d671428cd6cc4c71c5568
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rock_4
+      name: wall_3
       rect:
         serializedVersion: 2
-        x: 12
-        y: 62
-        width: 148
-        height: 146
+        x: 96
+        y: 31
+        width: 279
+        height: 83
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,47 +151,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ef18f1ecfe0375149bb88821166a84d2
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rock_5
-      rect:
-        serializedVersion: 2
-        x: 184
-        y: 30
-        width: 166
-        height: 196
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 443c2fa31b08e954dbbbcb8c90d40fbe
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rock_6
-      rect:
-        serializedVersion: 2
-        x: 367
-        y: 13
-        width: 158
-        height: 153
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 74c0e715506b3324c8e5110404624862
+      spriteID: d32f8299b784c9f4fb85f4cfd47ee035
       vertices: []
       indices: 
       edges: []
@@ -201,7 +159,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 3909ecb975da6574ab89c4f1dd0dceff
+    spriteID: 3da2f4b909c4db24ba5aa2929d49fe64
     vertices: []
     indices: 
     edges: []

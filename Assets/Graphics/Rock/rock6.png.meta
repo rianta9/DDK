@@ -1,9 +1,7 @@
 fileFormatVersion: 2
-guid: 78c75f0e2dc06654cbfabd679c6dce2c
+guid: f811d055cbe1b4543b90b4f9962c10af
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: suroo-18-s-removebg-preview_1
-    21300002: suroo-18-s-removebg-preview_3
+  fileIDToRecycleName: {}
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -42,12 +40,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 25
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -73,51 +71,11 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: suroo-18-s-removebg-preview_1
-      rect:
-        serializedVersion: 2
-        x: 393
-        y: 146
-        width: 358
-        height: 170
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: febd3965bcf6aaf408be77b508470008
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: suroo-18-s-removebg-preview_3
-      rect:
-        serializedVersion: 2
-        x: 401
-        y: 0
-        width: 240
-        height: 144
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 893df026310532b49b42d73d133b5da9
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: efd5650fcf46ec94fb7f5c24bceffead
+    spriteID: f04a3499b45ade84d8467fc13db416d4
     vertices: []
     indices: 
     edges: []
