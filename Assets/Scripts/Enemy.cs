@@ -17,7 +17,7 @@ public class Enemy : MonoBehaviour
    
     public void TakeDamage(int damage)
     {
-        animator.SetTrigger("Hurt");
+        gameObject.GetComponent<Animation>().Play("Trau_redflash");
         currentHealth -= damage;
         if (currentHealth <= 0)
             animator.SetBool("Die", true);
