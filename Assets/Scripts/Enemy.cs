@@ -31,7 +31,8 @@ public class Enemy : MonoBehaviour
     {
         
         GetComponent<CircleCollider2D>().enabled = false;
-        GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
+        GetComponent<Rigidbody2D>().simulated = false;
+        ///GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
         this.enabled = false;
     }
 }
