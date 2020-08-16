@@ -1647,6 +1647,11 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8282445009341961094, guid: e740eb714db13f3469d6cc7d6cbae363,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 9fc663b54731ce94b8b99b98f3cb3bec, type: 2}
     - target: {fileID: 8282445009341961095, guid: e740eb714db13f3469d6cc7d6cbae363,
         type: 3}
       propertyPath: player
@@ -2614,7 +2619,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.27211243, y: -0.19}
+  m_Offset: {x: -0.2678724, y: -0.23301679}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2625,7 +2630,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.9170755, y: 0.89764774}
+  m_Size: {x: 0.8322755, y: 0.81161416}
   m_EdgeRadius: 0
 --- !u!50 &1476310108
 Rigidbody2D:
