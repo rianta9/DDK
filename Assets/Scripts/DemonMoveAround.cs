@@ -14,17 +14,14 @@ using UnityEngine;
 public class DemonMoveAround : MonoBehaviour
 {
     public int blood = 200;
-    public int damage = 20;
 
     public float delayDieTime = 1f; // thời gian chờ animation death
-    public float delayAttackTime = 0.2f;
     public float delayRunTime = 0.2f; // thời gian đợi mỗi lần di chuyển
 
     public float movedLength = 0; // khoảng cách di chuyển so với vị trí ban đầu
     public float maxLength = 3; // khoảng cách di chuyển tối đa
     public int faceDirection = 1; // hướng di chuyển ban đầu. Nếu mặt demon hướng về bên trái thì set -1, ngược lại set 1
 
-    public bool isAttaking = false;
     public bool isRunning = true;
 
     public Animator anim;
@@ -52,6 +49,12 @@ public class DemonMoveAround : MonoBehaviour
         control = FindObjectOfType<AutoControlDemon>();
     }
 
+    public void Death()
+    {
+        control.SetDemonDied(true);
+        Destroy(gameObject);
+    }
+
     void Update()
     {
         if (this.blood <= 0)
@@ -61,20 +64,7 @@ public class DemonMoveAround : MonoBehaviour
             delayDieTime -= Time.deltaTime;
             if (delayDieTime <= 0)
             {
-                Destroy(gameObject);
-                control.SetDemonDied(true);
-            }
-        }
-
-        else if (isAttaking)
-        {
-            delayAttackTime -= Time.deltaTime; // cập nhật thời gian đợi còn lại
-            if (delayAttackTime <= 0) // nếu hết thời gian đợi thì cho phép tấn công
-            { // nếu đến lúc di chuyển
-                anim.SetBool("isAttaking", isAttaking); // bật animation di chuyển
-                delayAttackTime = 0.2f; // cập nhật lại delayTime cho lần sau
-                Player player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
-                player.SendMessageUpwards("Damage", damage); // gửi damage cho player
+                Death();
             }
         }
 
@@ -110,34 +100,6 @@ public class DemonMoveAround : MonoBehaviour
                     movedLength = 0; // reset movedlength
                 }
             }
-        }
-    }
-
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            isAttaking = true;
-            isRunning = false;
-        }
-    }
-
-    private void OnCollisionStay2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            isAttaking = true;
-            isRunning = false;
-        }
-    }
-
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            isAttaking = false;
-            isRunning = true;
         }
     }
 }

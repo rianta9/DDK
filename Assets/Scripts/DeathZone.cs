@@ -25,7 +25,10 @@ public class DeathZone : MonoBehaviour
             Player player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
             player.Death();
         }
-        else Destroy(another.gameObject);
+        else if (another.CompareTag("Enemy"))
+        {
+            another.SendMessageUpwards("Death");
+        }
     }
 
     //private void OnCollisionEnter2D(Collision2D collision)
