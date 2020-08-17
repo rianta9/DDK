@@ -1,19 +1,28 @@
 fileFormatVersion: 2
-guid: e5db95dea409c754391bc4e4cc5d77e2
+guid: 84a018c5e3ddbd344b9f9158e41905e7
 TextureImporter:
   fileIDToRecycleName:
-    21300000: house2_0
-    21300002: house2_1
-    21300004: house2_2
-    21300006: house2_3
-    21300008: house2_4
-    21300010: house2_5
-    21300012: house2_6
-    21300014: house2_7
-    21300016: house2_8
-    21300018: house2_9
-    21300020: house2_10
-    21300022: house2_11
+    21300000: explosion48_0
+    21300002: explosion48_3
+    21300004: explosion48_4
+    21300006: explosion48_5
+    21300008: explosion48_6
+    21300010: explosion48_7
+    21300012: explosion48_9
+    21300014: explosion48_10
+    21300016: explosion48_11
+    21300018: explosion48_12
+    21300020: explosion48_13
+    21300022: explosion48_14
+    21300024: explosion48_16
+    21300026: explosion48_17
+    21300028: explosion48_19
+    21300030: explosion48_21
+    21300032: explosion48_22
+    21300034: explosion48_27
+    21300036: explosion48_28
+    21300038: explosion48_29
+    21300040: explosion48_31
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -85,241 +94,321 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: house2_0
+      name: explosion48_0
       rect:
         serializedVersion: 2
-        x: 23
-        y: 9
-        width: 225
-        height: 393
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 64
+        y: 831
+        width: 132
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5337639, y: 0.5348191}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 55a55e0a18c25994dbbcb3c55566b93d
+      spriteID: df7cb473472d60449b706eb609d36d2f
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: house2_1
+      name: explosion48_3
       rect:
         serializedVersion: 2
-        x: 284
-        y: 278
-        width: 126
-        height: 59
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2534bf93057f2774589fd5eafea8b444
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: house2_2
-      rect:
-        serializedVersion: 2
-        x: 423
-        y: 200
-        width: 178
+        x: 318
+        y: 829
+        width: 144
         height: 140
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c72d65b471c22e843b4914c630d1b53b
+      spriteID: 77288da8458111947a6019f3d5d03f2f
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: house2_3
+      name: explosion48_4
       rect:
         serializedVersion: 2
-        x: 243
-        y: 73
-        width: 125
-        height: 186
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 573
+        y: 825
+        width: 150
+        height: 151
+      alignment: 9
+      pivot: {x: 0.47623006, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c7b91b1ed2406014ab2204969bc23646
+      spriteID: 5d761b111f9f2a442ad3c7c6328354b0
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: house2_4
+      name: explosion48_5
       rect:
         serializedVersion: 2
-        x: 367
-        y: 217
-        width: 45
-        height: 54
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 830
+        y: 826
+        width: 142
+        height: 145
+      alignment: 9
+      pivot: {x: 0.47066316, y: 0.5000004}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 76a5b9fec23062c459b00105f92e7657
+      spriteID: 51bcf825585320d4d89009201570da9a
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: house2_5
+      name: explosion48_10
       rect:
         serializedVersion: 2
-        x: 359
-        y: 163
-        width: 34
-        height: 38
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 66
+        y: 572
+        width: 137
+        height: 131
+      alignment: 9
+      pivot: {x: 0.45788428, y: 0.5000005}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 93e2991096b92d6428ea3830b439a6e4
+      spriteID: a136caffe904a384d9ea9f0b51899fe4
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: house2_6
+      name: explosion48_11
       rect:
         serializedVersion: 2
-        x: 434
-        y: 154
-        width: 47
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 308
+        y: 562
+        width: 146
+        height: 144
+      alignment: 9
+      pivot: {x: 0.5105388, y: 0.5106854}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c0f3ebe877834340816270d054c65e1
+      spriteID: 3d4ebad1973665b448e4e61dddd11fe9
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: house2_7
+      name: explosion48_13
       rect:
         serializedVersion: 2
-        x: 496
-        y: 155
-        width: 49
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 557
+        y: 557
+        width: 157
+        height: 150
+      alignment: 9
+      pivot: {x: 0.51715046, y: 0.50256467}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d2f41f0ebacc5674bbd540d9ab9f7ab1
+      spriteID: bea78e9597716b8438f99d3f9244140a
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: house2_8
+      name: explosion48_14
       rect:
         serializedVersion: 2
-        x: 361
-        y: 120
-        width: 48
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 818
+        y: 564
+        width: 152
+        height: 139
+      alignment: 9
+      pivot: {x: 0.5050619, y: 0.48236743}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 94c2c4c6ed45ea248bf77cc4e7565b78
+      spriteID: 48f4ea6e1d5bc9845b0882370218e685
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: house2_9
+      name: explosion48_17
       rect:
         serializedVersion: 2
-        x: 434
-        y: 112
-        width: 23
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 556
+        y: 296
+        width: 156
+        height: 151
+      alignment: 9
+      pivot: {x: 0.55531895, y: 0.5244933}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c599b5373fe6ba840881d45d520fa09b
+      spriteID: fd5a91058a2ae0d45b89070abd169f04
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: house2_10
+      name: explosion48_19
       rect:
         serializedVersion: 2
-        x: 471
-        y: 109
-        width: 34
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 819
+        y: 302
+        width: 150
+        height: 145
+      alignment: 9
+      pivot: {x: 0.54520345, y: 0.5212556}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c69d0e9330773744b81271189d9e51e2
+      spriteID: 2cdaf8cf9c758514f885d622a7f39d96
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: house2_11
+      name: explosion48_21
       rect:
         serializedVersion: 2
-        x: 514
-        y: 107
-        width: 35
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 65
+        y: 317
+        width: 134
+        height: 128
+      alignment: 9
+      pivot: {x: 0.46319962, y: 0.45665908}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: afbb3dca75b6044449b6a75ea088ce3d
+      spriteID: b5fea50e50365b34898cae3f47f1f661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion48_22
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 304
+        width: 146
+        height: 139
+      alignment: 9
+      pivot: {x: 0.53799796, y: 0.5044347}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41407d10e96f62b47ba8bd6369c1a566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion48_27
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 57
+        width: 149
+        height: 149
+      alignment: 9
+      pivot: {x: 0.49586314, y: 0.46276736}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1283c4741e237146b51a2803554d186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion48_28
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 60
+        width: 158
+        height: 152
+      alignment: 9
+      pivot: {x: 0.48049387, y: 0.44728094}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dae9541ff2605647b4ac620cc32fcac
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion48_29
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 65
+        width: 151
+        height: 139
+      alignment: 9
+      pivot: {x: 0.4795896, y: 0.47339264}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f36c329fbeab2d4b828e2da12ae9be0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion48_31
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 62
+        width: 133
+        height: 129
+      alignment: 9
+      pivot: {x: 0.5000001, y: 0.47610828}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1637763ef8e2294408375cbee86ae079
       vertices: []
       indices: 
       edges: []
@@ -327,7 +416,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 7c078bf820749d14ab7d6c07fc7a0902
+    spriteID: b3ad4dc2027d86b45b449418db1ccf6c
     vertices: []
     indices: 
     edges: []
