@@ -8,7 +8,7 @@ public class Player : MonoBehaviour
     public Rigidbody2D r2;
 
     public int MaxHealth = 100;
-    int currentHealth;
+    public int currentHealth;
     public HealthBar healthBar;
     void Start()
     {
@@ -20,6 +20,7 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (currentHealth <= 0) Death();
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             TakeDamage(10);
@@ -28,7 +29,6 @@ public class Player : MonoBehaviour
 
     public void Death()
     {
-
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
     void TakeDamage(int damage)
@@ -51,5 +51,10 @@ public class Player : MonoBehaviour
             r2.AddForce(Vector2.left * pow);
         }
 
+    }
+
+    public void Damage(int damage)
+    {
+        this.currentHealth -= damage;
     }
 }
