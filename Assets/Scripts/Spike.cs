@@ -2,6 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ Add script này vào đối tượng bẫy cấu rỉa máu
+ Nếu player nằm trong phạm vi rỉa máu của đối tượng, mặc định refreshTime(giây) sẽ hạ máu player một lần
+ Class Player phải có 1 hàm void Damage(int blood) để trừ số máu bị hạ
+ */
+
 public class Spike : MonoBehaviour
 {
     public int damage = 5;

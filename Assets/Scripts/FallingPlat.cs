@@ -2,6 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ Nếu player chạm vào đối tượng được add script này, mặc định timeDelay(giây) đối tượng này sẽ rơi xuống
+ Đối tượng phải add component Rigidbody2D và set trạng thái static
+ */
+
 public class FallingPlat : MonoBehaviour
 {
     public Rigidbody2D r2;
