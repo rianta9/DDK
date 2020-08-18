@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-/*Trong đối tượng demon, tạo 1 gameobject...add vào đó */
+/*Trong đối tượng demon, tạo 1 gameobject...add script này vào đó */
 public class DemonAutoAttaking : MonoBehaviour
 {
     public int damage = 5;
