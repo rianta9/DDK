@@ -48,6 +48,7 @@ public class Thunder : MonoBehaviour
                 if (isInRange)
                 {
                     player.SendMessage("Damage", damage); // gửi damage cho player
+                    isInRange = false;
                 }
                 isFalling = false;
                 currentWaitTime = waitTime;
@@ -71,10 +72,10 @@ public class Thunder : MonoBehaviour
         if (collision.CompareTag("Player")) isInRange = true;
     }
 
-    private void OnTriggerStay2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Player")) isInRange = true;
-    }
+    //private void OnTriggerStay2D(Collider2D collision)
+    //{
+    //    if (collision.CompareTag("Player")) isInRange = true;
+    //}
 
     private void OnTriggerExit2D(Collider2D collision)
     {

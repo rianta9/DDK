@@ -10,11 +10,14 @@ public class Player : MonoBehaviour
     public int MaxHealth = 100;
     public int currentHealth;
     public HealthBar healthBar;
+    public AudioSource audioSource;
+    public AudioClip gameOverSound;
     void Start()
     {
         currentHealth = MaxHealth;
         healthBar.setMaxHealth(MaxHealth);
         r2 = gameObject.GetComponent<Rigidbody2D>();
+        audioSource = gameObject.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -28,6 +31,7 @@ public class Player : MonoBehaviour
 
     public void Death()
     {
+        if (gameOverSound) audioSource.PlayOneShot(gameOverSound, 0.8f);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
     void TakeDamage(int damage)
