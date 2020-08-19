@@ -13,16 +13,24 @@ public class Thunder : MonoBehaviour
 {
     private Animator anim;
     public float randomTime = 1f;
-    public float waitTime = 1f;
+    public float waitTime = 0.5f;
     public int damage = 50;
     private float currentRandomTime;
     private float currentWaitTime;
     private bool isFalling = false;
     private bool isInRange = false;
+    public AudioSource audioSource;
+    public AudioClip thunder;
+    public Area thunderArea; // lấy phạm vi vùng sấm, dùng để phát tiếng sấm
+    Player player;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         anim = GetComponent<Animator>();
+        audioSource = gameObject.GetComponent<AudioSource>();
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+        //thunderArea = GameObject.FindObjectOfType<ThunderArea>();
+        thunderArea = gameObject.GetComponentInParent<Area>();
         currentRandomTime = randomTime;
         currentWaitTime = waitTime;
     }
@@ -36,9 +44,9 @@ public class Thunder : MonoBehaviour
             currentWaitTime -= Time.deltaTime;
             if (currentWaitTime <= 0)
             {
+                if(thunder && thunderArea.isInRange) audioSource.PlayOneShot(thunder, 0.1f); // âm thanh sấm
                 if (isInRange)
                 {
-                    Player player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
                     player.SendMessage("Damage", damage); // gửi damage cho player
                 }
                 isFalling = false;

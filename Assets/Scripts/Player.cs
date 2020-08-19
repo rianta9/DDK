@@ -20,7 +20,6 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (currentHealth <= 0) Death();
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             TakeDamage(10);
@@ -56,5 +55,8 @@ public class Player : MonoBehaviour
     public void Damage(int damage)
     {
         this.currentHealth -= damage;
+        healthBar.setHealth(currentHealth);
+        if (currentHealth <= 0)
+            Death();
     }
 }
