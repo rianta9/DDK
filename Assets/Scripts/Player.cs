@@ -10,6 +10,7 @@ public class Player : MonoBehaviour
     public int MaxHealth = 100;
     int currentHealth;
     public HealthBar healthBar;
+    
     void Start()
     {
         currentHealth = MaxHealth;

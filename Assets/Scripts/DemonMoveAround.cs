@@ -40,7 +40,7 @@ public class DemonMoveAround : MonoBehaviour
         return this.blood;
     }
 
-    public void Damage(int damage)
+    public void TakeDamage(int damage)
     {
         this.blood -= damage;
     }
@@ -62,7 +62,7 @@ public class DemonMoveAround : MonoBehaviour
             if (delayDieTime <= 0)
             {
                 Destroy(gameObject);
-                control.SetDemonDied(true);
+               // control.SetDemonDied(true);
             }
         }
 
@@ -114,7 +114,16 @@ public class DemonMoveAround : MonoBehaviour
     }
 
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    //private void OnCollisionEnter2D(Collision2D collision)
+    //{
+    //    if (collision.gameObject.CompareTag("Player"))
+    //    {
+    //        isAttaking = true;
+    //        isRunning = false;
+    //    }
+    //}
+
+    private void OnTriggerEnter2D (Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
@@ -123,7 +132,16 @@ public class DemonMoveAround : MonoBehaviour
         }
     }
 
-    private void OnCollisionStay2D(Collision2D collision)
+    //private void OnCollisionStay2D(Collision2D collision)
+    //{
+    //    if (collision.gameObject.CompareTag("Player"))
+    //    {
+    //        isAttaking = true;
+    //        isRunning = false;
+    //    }
+    //}
+
+    private void OnTriggerStay2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
@@ -132,7 +150,16 @@ public class DemonMoveAround : MonoBehaviour
         }
     }
 
-    private void OnCollisionExit2D(Collision2D collision)
+    //private void OnCollisionExit2D(Collision2D collision)
+    //{
+    //    if (collision.gameObject.CompareTag("Player"))
+    //    {
+    //        isAttaking = false;
+    //        isRunning = true;
+    //    }
+    //}
+
+    private void OnTriggerExit2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
