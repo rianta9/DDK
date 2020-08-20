@@ -47,7 +47,7 @@ public class PlayerMoving : MonoBehaviour
        
         horizontalmove = Input.GetAxisRaw("Horizontal");
         horizontalmove *= runspeed * Time.fixedDeltaTime * 10f;
-        if(horizontalmove != 0)
+        if (horizontalmove != 0)
         {
             comBat.GetComponent<PlayerComBat>().SkipSkill();
         }
@@ -80,5 +80,9 @@ public class PlayerMoving : MonoBehaviour
     public bool isGrounded()
     {
         return Grounded;
+    }
+    public bool get_faceright()
+    {
+        return faceright;
     }
 }

@@ -1,0 +1,424 @@
+fileFormatVersion: 2
+guid: 1377c78d3b2048f4d8338c78f07e823a
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: spr_StrikerSlash_stripNoEffect_0
+    21300002: spr_StrikerSlash_stripNoEffect_1
+    21300004: spr_StrikerSlash_stripNoEffect_2
+    21300006: spr_StrikerSlash_stripNoEffect_3
+    21300008: spr_StrikerSlash_stripNoEffect_4
+    21300010: spr_StrikerSlash_stripNoEffect_5
+    21300012: spr_StrikerSlash_stripNoEffect_6
+    21300014: spr_StrikerSlash_stripNoEffect_7
+    21300016: spr_StrikerSlash_stripNoEffect_8
+    21300018: spr_StrikerSlash_stripNoEffect_9
+    21300020: spr_StrikerSlash_stripNoEffect_10
+    21300022: spr_StrikerSlash_stripNoEffect_11
+    21300024: spr_StrikerSlash_stripNoEffect_12
+    21300026: spr_StrikerSlash_stripNoEffect_13
+    21300028: spr_StrikerSlash_stripNoEffect_14
+    21300030: spr_StrikerSlash_stripNoEffect_15
+  externalObjects: {}
+  serializedVersion: 9
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: spr_StrikerSlash_stripNoEffect_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 28
+        width: 42
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62008819bab5f7846b6e54749cf2cf20
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_StrikerSlash_stripNoEffect_1
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 28
+        width: 40
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48b9636bc9ac74447a1d60393fd5527b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_StrikerSlash_stripNoEffect_2
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 28
+        width: 64
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84031d38f0f6936469b5f7814e13ae96
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_StrikerSlash_stripNoEffect_3
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 28
+        width: 45
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 710b9f1b719d0a647a6782e53f3f6be8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_StrikerSlash_stripNoEffect_4
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 28
+        width: 56
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f6874ec61b6e4447926d0b1d6c1f0bf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_StrikerSlash_stripNoEffect_5
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 28
+        width: 43
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f245fe9efe2ac1b4b852b6ffc388c85e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_StrikerSlash_stripNoEffect_6
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 28
+        width: 47
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbf53f026dc17f446966d3da78e3a5bc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_StrikerSlash_stripNoEffect_7
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 28
+        width: 34
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2f5a7c4d55f25c4993ced63bde95438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_StrikerSlash_stripNoEffect_8
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 28
+        width: 38
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47064d22fc629aa4c9d44439289e953c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_StrikerSlash_stripNoEffect_9
+      rect:
+        serializedVersion: 2
+        x: 1173
+        y: 28
+        width: 41
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e617e0a37d26b3b47b53b6a49c733a9c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_StrikerSlash_stripNoEffect_10
+      rect:
+        serializedVersion: 2
+        x: 1295
+        y: 28
+        width: 47
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaf36f41e3b8f244faafc700f5d6a912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_StrikerSlash_stripNoEffect_11
+      rect:
+        serializedVersion: 2
+        x: 1423
+        y: 28
+        width: 47
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cbaacc655de3f94c8f09cd97dd679e1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_StrikerSlash_stripNoEffect_12
+      rect:
+        serializedVersion: 2
+        x: 1551
+        y: 28
+        width: 47
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b73d085826c786c47b812e1aa01b34c7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_StrikerSlash_stripNoEffect_13
+      rect:
+        serializedVersion: 2
+        x: 1675
+        y: 28
+        width: 51
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 499a90c4b63d8a6419cd810d79be68ef
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_StrikerSlash_stripNoEffect_14
+      rect:
+        serializedVersion: 2
+        x: 1799
+        y: 28
+        width: 50
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 184abe4b36ac48f4fb408515d17905d7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_StrikerSlash_stripNoEffect_15
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 28
+        width: 45
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed225fdc9f60b644c83920e02e8b665e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 614449425074fc141a7e052f93f02341
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

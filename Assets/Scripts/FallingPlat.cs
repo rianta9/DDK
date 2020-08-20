@@ -2,31 +2,39 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ Nếu player chạm vào đối tượng được add script này, mặc định timeDelay(giây) đối tượng này sẽ rơi xuống
+ Đối tượng phải add component Rigidbody2D và set trạng thái static
+ */
+
 public class FallingPlat : MonoBehaviour
 {
-    // Start is called before the first frame update
-    // Start is called before the first frame update
     public Rigidbody2D r2;
-    public float timedelay = 2;
-    // Use this for initialization
+    public float timeDelay = 0.5f;
+    // Start is called before the first frame update
     void Start()
     {
         r2 = gameObject.GetComponent<Rigidbody2D>();
     }
 
-
-    private void OnCollisionEnter2D(Collision2D col)
+    // Update is called once per frame
+    void Update()
     {
-        if (col.collider.CompareTag("Player")) // kiem tra nguoi chơi player có chạm với Rigi
+
+    }
+
+    private void OnCollisionEnter2D(Collision2D another)
+    {
+        if (another.collider.CompareTag("Player"))
         {
-            StartCoroutine(fall());  // kích hoạt fuction
+            StartCoroutine(fall());
         }
     }
 
     IEnumerator fall()
     {
-        yield return new WaitForSeconds(timedelay);
-        r2.bodyType = RigidbodyType2D.Dynamic; // sau khi doi 2s thi chuyen static sang Dymamic
+        yield return new WaitForSeconds(timeDelay);
+        r2.bodyType = RigidbodyType2D.Dynamic;
         yield return 0;
-    }   
+    }
 }

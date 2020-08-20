@@ -7,6 +7,9 @@ TagManager:
   - Enemy
   - Ground
   - Cot
+  - Bird
+  - ThanhGo
+  - Boss
   layers:
   - Default
   - TransparentFX
@@ -17,7 +20,7 @@ TagManager:
   - 
   - 
   - Player
-  - 
+  - Boss
   - 
   - 
   - 

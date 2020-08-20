@@ -9,6 +9,7 @@ public class PlayerComBat : MonoBehaviour
     public LayerMask enemyLayers;
     public PlayerMoving player;
 
+    public Rigidbody2D rigidbody;
     public float attackRange = 0.5f;
     public int attackDamage = 10;
     public float attackRate = 2f;
@@ -22,6 +23,7 @@ public class PlayerComBat : MonoBehaviour
     {
         nextAttackTime = timeattack;
         player = gameObject.GetComponent<PlayerMoving>();
+        rigidbody = gameObject.GetComponent<Rigidbody2D>();
     }
     void Update()
     {
@@ -47,7 +49,14 @@ public class PlayerComBat : MonoBehaviour
     }
     void Attack()
     {
-        
+        if (player.get_faceright())
+        {
+            rigidbody.AddForce(Vector2.right * 200f);
+        }
+        else
+        {
+            rigidbody.AddForce(Vector2.left * 200f);
+        }
         Collider2D[] colliders = Physics2D.OverlapCircleAll(attackpoint.position, attackRange, enemyLayers);
         foreach(Collider2D enemy in colliders)
         {
