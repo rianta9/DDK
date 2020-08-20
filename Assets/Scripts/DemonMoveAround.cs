@@ -37,7 +37,7 @@ public class DemonMoveAround : MonoBehaviour
         return this.blood;
     }
 
-    public void Damage(int damage)
+    public void TakeDamage(int damage)
     {
         this.blood -= damage;
     }

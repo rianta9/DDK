@@ -12,6 +12,7 @@ public class Player : MonoBehaviour
     public HealthBar healthBar;
     public AudioSource audioSource;
     public AudioClip gameOverSound;
+
     void Start()
     {
         currentHealth = MaxHealth;
