@@ -9,7 +9,7 @@ public class PlayerComBat : MonoBehaviour
     public LayerMask enemyLayers;
     public PlayerMoving player;
 
-    public Rigidbody2D rigidbody;
+    public Rigidbody2D r2;
     public float attackRange = 0.5f;
     public int attackDamage = 10;
     public float attackRate = 2f;
@@ -17,45 +17,57 @@ public class PlayerComBat : MonoBehaviour
 
     float nextAttackTime;
 
-    bool attacking = false;
+    public bool attacking;
     // Update is called once per frame
-    private void Start()
+    private void Awake()
     {
         nextAttackTime = timeattack;
         player = gameObject.GetComponent<PlayerMoving>();
-        rigidbody = gameObject.GetComponent<Rigidbody2D>();
+        r2 = gameObject.GetComponent<Rigidbody2D>();
     }
     void Update()
     {
-        
-        if(Input.GetKeyDown(KeyCode.Z) && !attacking && player.isGrounded())
+        if(Time.time >= nextAttackTime)
         {
-            attacking = true;
-            nextAttackTime = timeattack;
-        }
-        if (attacking)
-        {
-            if(nextAttackTime > 0)
+            if (Input.GetKeyDown(KeyCode.Z) && player.isGrounded())
             {
-                nextAttackTime -= Time.deltaTime;
-            }
-            else
-            {
-                attacking = false;
+                TanCong();
+                nextAttackTime = Time.time + (1f / attackRate);
+                attacking = true;
             }
         }
         
-        animator.SetBool("Attack",attacking);
+        
+        //if(Input.GetKeyDown(KeyCode.Z) && !attacking && player.isGrounded())
+        //{
+
+        //    attacking = true;
+        //    nextAttackTime = timeattack;
+        //}
+        //if (attacking)
+        //{
+        //    if(nextAttackTime > 0)
+        //    {
+        //        nextAttackTime -= Time.deltaTime;
+        //        animator.SetTrigger("Attack");
+        //    }
+        //    else
+        //    {
+        //        attacking = false;
+        //    }
+        //}
+        
+        
     }
     void Attack()
     {
         if (player.get_faceright())
         {
-            rigidbody.AddForce(Vector2.right * 200f);
+            r2.AddForce(Vector2.right * 200f);
         }
         else
         {
-            rigidbody.AddForce(Vector2.left * 200f);
+            r2.AddForce(Vector2.left * 200f);
         }
         Collider2D[] colliders = Physics2D.OverlapCircleAll(attackpoint.position, attackRange, enemyLayers);
         foreach(Collider2D enemy in colliders)
@@ -63,6 +75,12 @@ public class PlayerComBat : MonoBehaviour
             enemy.SendMessageUpwards("TakeDamage", attackDamage);
             //enemy.GetComponent<Enemy>().TakeDamage(attackDamage);
         }
+        
+    }
+    void TanCong()
+    {
+        animator.SetTrigger("Attack");
+       
     }
     //ve duong tron cho diem point attack
     private void OnDrawGizmosSelected()
