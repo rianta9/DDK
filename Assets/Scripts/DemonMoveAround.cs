@@ -102,4 +102,40 @@ public class DemonMoveAround : MonoBehaviour
             }
         }
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            isRunning = false; // set trạng thái ko di chuyển
+            delayRunTime = int.MaxValue; // cho demon dừng di chuyển
+        }
+        else if(!collision.gameObject.CompareTag("Enemy"))
+        {
+            isRunning = true;
+            faceDirection *= -1;
+        }
+    }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            isRunning = false; // set trạng thái ko di chuyển
+            delayRunTime = int.MaxValue; // cho demon dừng di chuyển
+            Player player = FindObjectOfType<Player>();
+            if(player.transform.position.x > gameObject.transform.position.x)
+                faceDirection = 1;
+            else faceDirection = -1;
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            isRunning = false; // set trạng thái ko di chuyển
+            delayRunTime = 0.5f; // cho demon đứng yên 1s rồi tiếp tục di chuyển
+        }
+    }
 }
