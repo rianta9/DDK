@@ -14,7 +14,7 @@ public class Enemy_move : MonoBehaviour
 
     public Enemy enemy;
     public Animator anim;
-    public Rigidbody2D rigidbody;
+    public Rigidbody2D r2;
     public float timedelay = 2f;
     
     float time_idle = 0f;
@@ -26,7 +26,7 @@ public class Enemy_move : MonoBehaviour
     {
         anim = gameObject.GetComponent<Animator>();
         enemy = gameObject.GetComponent<Enemy>();
-        rigidbody = gameObject.GetComponent<Rigidbody2D>();
+        r2 = gameObject.GetComponent<Rigidbody2D>();
         left_x = transform.position.x - left_limit;
         right_x = transform.position.x + right_limit;
         time_idle = Time.time;
@@ -66,14 +66,14 @@ public class Enemy_move : MonoBehaviour
             
             if (MoveRight && !idle)
             {
-                
-                rigidbody.velocity = Vector2.SmoothDamp(rigidbody.velocity, new Vector2(1 * speed * Time.fixedDeltaTime * 10f ,rigidbody.velocity.y), ref m_velocity, m_MovementSmoothing);
+
+                r2.velocity = Vector2.SmoothDamp(r2.velocity, new Vector2(1 * speed * Time.fixedDeltaTime * 10f , r2.velocity.y), ref m_velocity, m_MovementSmoothing);
                 //transform.Translate(2 * speed * Time.deltaTime, 0, 0);
                 transform.localScale = new Vector2(2, 2);
             }
             if(!MoveRight && !idle)
             {
-                rigidbody.velocity = Vector2.SmoothDamp(rigidbody.velocity, new Vector2(-1 * speed * Time.fixedDeltaTime * 10f, rigidbody.velocity.y), ref m_velocity, m_MovementSmoothing);
+                r2.velocity = Vector2.SmoothDamp(r2.velocity, new Vector2(-1 * speed * Time.fixedDeltaTime * 10f, r2.velocity.y), ref m_velocity, m_MovementSmoothing);
                 //transform.Translate(-2 * speed * Time.deltaTime, 0, 0);
                 transform.localScale = new Vector2(-2, 2);
             }
