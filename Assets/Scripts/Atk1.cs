@@ -19,6 +19,7 @@ public class Atk1 : StateMachineBehaviour
         {
             animator.SetBool("Atk2", true);
         }
+        
     }
 
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
@@ -29,6 +30,10 @@ public class Atk1 : StateMachineBehaviour
         if (PlayerComBat.hitkick >= 2)
         {
             animator.SetBool("Atk2", true);
+        }
+        else
+        {
+            PlayerComBat.hitkick = 0;
         }
     }
 
