@@ -9,51 +9,138 @@ public class PlayerComBat : MonoBehaviour
     public LayerMask enemyLayers;
     public PlayerMoving player;
 
+    public Rigidbody2D r2;
     public float attackRange = 0.5f;
     public int attackDamage = 10;
     public float attackRate = 2f;
-    public float timeattack = 1.2f;
 
-    float nextAttackTime;
 
-    bool attacking = false;
+    public bool attacking;
+
+
+
+
+    public float lastClickedTime;
+    public float MaxComboTime;
+    public static int hitkick = 0;
+
+   
+
     // Update is called once per frame
-    private void Start()
+    private void Awake()
     {
-        nextAttackTime = timeattack;
+
         player = gameObject.GetComponent<PlayerMoving>();
+        r2 = gameObject.GetComponent<Rigidbody2D>();
     }
     void Update()
     {
         
-        if(Input.GetKeyDown(KeyCode.Z) && !attacking && player.isGrounded())
+
+        if (Time.time - lastClickedTime > MaxComboTime)
         {
-            attacking = true;
-            nextAttackTime = timeattack;
+            hitkick = 0;
         }
-        if (attacking)
+        if(hitkick < 4)
         {
-            if(nextAttackTime > 0)
+            if (Input.GetKeyDown(KeyCode.Z) && player.isGrounded())
             {
-                nextAttackTime -= Time.deltaTime;
-            }
-            else
-            {
-                attacking = false;
+                lastClickedTime = Time.time;
+                hitkick++;
+                if (hitkick == 1)
+                {
+                    TanCong();
+                }
+                hitkick = Mathf.Clamp(hitkick, 0, 4);
             }
         }
-        
-        animator.SetBool("Attack",attacking);
+        //if(Time.time >= nextAttackTime) { }
+        //if (Input.GetKeyDown(KeyCode.Z) && player.isGrounded())
+        //{
+        //    TanCong();
+        //    Debug.Log("1");
+
+        //}
+
+
+
+
+
+
     }
     void Attack()
     {
-        
+        if (player.get_faceright())
+        {
+            r2.AddForce(Vector2.right * 100f);
+        }
+        else
+        {
+            r2.AddForce(Vector2.left * 100f);
+        }
         Collider2D[] colliders = Physics2D.OverlapCircleAll(attackpoint.position, attackRange, enemyLayers);
         foreach(Collider2D enemy in colliders)
         {
             enemy.SendMessageUpwards("TakeDamage", attackDamage);
-            //enemy.GetComponent<Enemy>().TakeDamage(attackDamage);
+            
         }
+        
+    }
+    void Attack2()
+    {
+        if (player.get_faceright())
+        {
+            r2.AddForce(Vector2.right * 200f);
+        }
+        else
+        {
+            r2.AddForce(Vector2.left * 200f);
+        }
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(attackpoint.position, attackRange, enemyLayers);
+        foreach (Collider2D enemy in colliders)
+        {
+            enemy.SendMessageUpwards("TakeDamage", attackDamage + (attackDamage*0.1f));
+
+        }
+
+    }
+    void Attack3()
+    {
+        if (player.get_faceright())
+        {
+            r2.AddForce(Vector2.right * 250f);
+        }
+        else
+        {
+            r2.AddForce(Vector2.left * 250f);
+        }
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(attackpoint.position, attackRange, enemyLayers);
+        foreach (Collider2D enemy in colliders)
+        {
+            enemy.SendMessageUpwards("TakeDamage", attackDamage + (attackDamage*0.2f));
+
+        }
+
+    }
+
+    void TanCong()
+    {
+
+        animator.SetBool("Atk1", true);
+        attacking = true;
+    }
+    void TanCong2()
+    {
+
+        //animator.SetBool("Atk2", true);
+        attacking = true;
+    }
+    void TanCong3()
+    {
+        //animator.SetBool("Atk3", true);
+ 
+        attacking = true;
+
     }
     //ve duong tron cho diem point attack
     private void OnDrawGizmosSelected()
@@ -67,4 +154,5 @@ public class PlayerComBat : MonoBehaviour
     {
         attacking = false;
     }
+    
 }

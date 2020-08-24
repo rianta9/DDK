@@ -32,7 +32,7 @@ public class PlayerMoving : MonoBehaviour
         
         if (Input.GetButtonDown("Jump"))//jump button
         {
-            if(Grounded)
+            if(Grounded && !comBat.attacking)
             {
                 Grounded = false;
                 rigidbody2.AddForce(new Vector2(0f, jumpForce));
@@ -44,13 +44,21 @@ public class PlayerMoving : MonoBehaviour
     }
     private void FixedUpdate()
     {
-       
+        
         horizontalmove = Input.GetAxisRaw("Horizontal");
-        horizontalmove *= runspeed * Time.fixedDeltaTime * 10f;
-        if(horizontalmove != 0)
+        if (!comBat.attacking)
         {
-            comBat.GetComponent<PlayerComBat>().SkipSkill();
+            horizontalmove *= runspeed * Time.fixedDeltaTime * 10f;
         }
+        else
+        {
+            horizontalmove = 0;
+        }
+       
+        //if (horizontalmove != 0)
+        //{
+        //    comBat.GetComponent<PlayerComBat>().SkipSkill();
+        //}
         Vector2 targetVelocity = new Vector2(horizontalmove, rigidbody2.velocity.y);
         rigidbody2.velocity = Vector2.SmoothDamp(rigidbody2.velocity, targetVelocity, ref m_velocity, m_MovementSmoothing);
         
@@ -80,5 +88,9 @@ public class PlayerMoving : MonoBehaviour
     public bool isGrounded()
     {
         return Grounded;
+    }
+    public bool get_faceright()
+    {
+        return faceright;
     }
 }
