@@ -28,6 +28,10 @@ public class Atk2 : StateMachineBehaviour
         {
             animator.SetBool("Atk3", true);
         }
+        else
+        {
+            PlayerComBat.hitkick = 0;
+        }
     }
 
     // OnStateMove is called right after Animator.OnAnimatorMove()

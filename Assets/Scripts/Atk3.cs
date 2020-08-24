@@ -20,6 +20,8 @@ public class Atk3 : StateMachineBehaviour
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         animator.SetBool("Atk3", false);
+        PlayerComBat.hitkick = 0;
+
     }
 
     // OnStateMove is called right after Animator.OnAnimatorMove()
