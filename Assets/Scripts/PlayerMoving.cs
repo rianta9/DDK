@@ -55,10 +55,7 @@ public class PlayerMoving : MonoBehaviour
             horizontalmove = 0;
         }
        
-        //if (horizontalmove != 0)
-        //{
-        //    comBat.GetComponent<PlayerComBat>().SkipSkill();
-        //}
+       
         Vector2 targetVelocity = new Vector2(horizontalmove, rigidbody2.velocity.y);
         rigidbody2.velocity = Vector2.SmoothDamp(rigidbody2.velocity, targetVelocity, ref m_velocity, m_MovementSmoothing);
         
