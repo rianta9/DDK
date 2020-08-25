@@ -16,7 +16,7 @@ public class PlayerComBat : MonoBehaviour
 
 
     public bool attacking;
-
+    //private bool CanAttack;
 
 
 
@@ -40,6 +40,7 @@ public class PlayerComBat : MonoBehaviour
         if (Time.time - lastClickedTime > MaxComboTime)
         {
             hitkick = 0;
+            //CanAttack = true;
         }
         if(hitkick < 4)
         {
