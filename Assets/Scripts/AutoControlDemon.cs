@@ -35,7 +35,7 @@ public class AutoControlDemon : MonoBehaviour
     // Tạo demon mới
     public void createDemon()
     {
-        Vector2 demonPosition = new Vector2(Random.Range(-30, 10), Random.Range(-10, -5));
+        Vector2 demonPosition = new Vector2(Random.Range(350, 400), Random.Range(-10, -5));
         if (demon)
         {
             Instantiate(demon, demonPosition, Quaternion.identity); // tạo ra 1 demon ở vị trí demonPosition
