@@ -5,21 +5,27 @@ using UnityEngine;
 public class AttackEnemy : MonoBehaviour
 {
     public Transform Point_Attack;
+    public Transform AttackRange_is;
+    public float AttackRange;
+    public int Damage_enemy;
+
     [SerializeField] private LayerMask WhatIsPlayer;
     public Animator animator;
     public BasicEnemyController enemyController;
+    public Rigidbody2D r2;
 
     // Start is called before the first frame update
     void Start()
     {
         enemyController = gameObject.GetComponent<BasicEnemyController>();
+        r2 = gameObject.GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
       
-        Collider2D colliders = Physics2D.OverlapBox(Point_Attack.position, new Vector3(2.5f, 1,0),0, WhatIsPlayer);
+        Collider2D colliders = Physics2D.OverlapBox(AttackRange_is.position, new Vector3(3, 1,0),0, WhatIsPlayer);
         if (colliders != null)
         {
             animator.SetBool("Attack",true);
@@ -48,7 +54,8 @@ public class AttackEnemy : MonoBehaviour
         if (Point_Attack == null)
             return;
         Gizmos.color = Color.blue;
-        Gizmos.DrawWireCube(Point_Attack.position,new Vector3(5,1,0));
+        Gizmos.DrawWireCube(AttackRange_is.position,new Vector3(5,1,0));
+        Gizmos.DrawWireSphere(Point_Attack.position, AttackRange);
 
         //Gizmos.DrawFrustum(Point_Attack.position, 20,10,2,0.5f);
     }
@@ -56,6 +63,23 @@ public class AttackEnemy : MonoBehaviour
     {
         enemyController.setAttackNotMove(1);
     }
-    
-    
+    void Attack()
+    {
+        if (enemyController.getFaceright())
+        {
+            r2.AddForce(Vector2.right * 200f);
+        }
+        else
+        {
+            r2.AddForce(Vector2.left * 200f);
+        }
+        Collider2D colliders = Physics2D.OverlapCircle(Point_Attack.position, AttackRange, WhatIsPlayer);
+       
+        if(colliders != null)
+        {
+            colliders.SendMessageUpwards("TakeDamage", Damage_enemy);
+        }
+       
+    }
+   
 }

@@ -4365,7 +4365,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.2033329, y: -0.02018106}
+  m_Offset: {x: -0.2033329, y: 0.033856988}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -4376,7 +4376,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.9683342, y: 1.1805537}
+  m_Size: {x: 0.9683342, y: 1.0724776}
   m_EdgeRadius: 0
 --- !u!114 &1142482303
 MonoBehaviour:
@@ -4400,10 +4400,11 @@ MonoBehaviour:
     m_Bits: 1
   left_limit: 8
   right_limit: 8
-  MaxHealth: 1000
+  MaxHealth: 30
   Enemy: {fileID: 1142482300}
   r2: {fileID: 1142482301}
   isBound: 1
+  animator: {fileID: 1142482298}
 --- !u!58 &1142482304
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4432,12 +4433,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c86cf8e4630d7343ad0b795431283e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Point_Attack: {fileID: 752189747}
+  Point_Attack: {fileID: 420488008}
+  AttackRange_is: {fileID: 752189747}
+  AttackRange: 0.7
+  Damage_enemy: 3
   WhatIsPlayer:
     serializedVersion: 2
     m_Bits: 256
   animator: {fileID: 1142482298}
   enemyController: {fileID: 1142482303}
+  r2: {fileID: 1142482301}
 --- !u!1 &1146695243
 GameObject:
   m_ObjectHideFlags: 0
