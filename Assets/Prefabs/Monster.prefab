@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 492595621}
   - component: {fileID: 492595622}
-  - component: {fileID: 1897605527}
+  - component: {fileID: 556083573}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -58,7 +58,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.67, y: 2.06}
   m_EdgeRadius: 0
---- !u!114 &1897605527
+--- !u!114 &556083573
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -73,8 +73,8 @@ MonoBehaviour:
   damage: 5
   delayAttackTime: 1
   waitTime: 0
-  isAttaking: 0
-  anim: {fileID: 0}
+  isAttacking: 0
+  animator: {fileID: 0}
 --- !u!1 &7194907007373257281
 GameObject:
   m_ObjectHideFlags: 0
@@ -243,5 +243,6 @@ MonoBehaviour:
   movedLength: 0
   maxLength: 3
   faceDirection: 1
+  moveDirection: 1
   isRunning: 1
   anim: {fileID: 0}

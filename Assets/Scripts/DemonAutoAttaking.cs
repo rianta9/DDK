@@ -7,22 +7,22 @@ public class DemonAutoAttaking : MonoBehaviour
     public int damage = 5;
     public float delayAttackTime = 1.0f; // thời gian đợi mỗi lần di chuyển
     public float waitTime;
-    public bool isAttaking = false;
-    public Animator anim;
+    public bool isAttacking = false;
+    public Animator animator;
 
 
     // Start is called before the first frame update
     void Awake()
     {
-        anim = GetComponentInParent<Animator>();
+        animator = GetComponentInParent<Animator>();
         this.waitTime = delayAttackTime;
     }
 
     // Update is called once per frame
     void Update()
     {
-        anim.SetBool("isAttaking", isAttaking); // bật animation di chuyển
-        if (isAttaking)
+        animator.SetBool("isAttacking", isAttacking); // bật animation di chuyển
+        if (isAttacking)
         {
             this.waitTime = this.waitTime - Time.deltaTime; // cập nhật thời gian đợi còn lại
             if (this.waitTime <= 0) 
@@ -36,24 +36,15 @@ public class DemonAutoAttaking : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
-        {
-            isAttaking = true;
-        }
+        if (collision.CompareTag("Player")) isAttacking = true;
     }
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
-        {
-            isAttaking = true;
-        }
+        if (collision.CompareTag("Player")) isAttacking = true;
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
-        {
-            isAttaking = false;
-        }
+        if (collision.CompareTag("Player")) isAttacking = false;
     }
 }
