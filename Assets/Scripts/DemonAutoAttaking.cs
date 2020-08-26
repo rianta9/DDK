@@ -8,20 +8,20 @@ public class DemonAutoAttaking : MonoBehaviour
     public float delayAttackTime = 1.0f; // thời gian đợi mỗi lần di chuyển
     public float waitTime;
     public bool isAttacking = false;
-    public Animator animator;
+    public Animator anim;
 
 
     // Start is called before the first frame update
     void Awake()
     {
-        animator = GetComponentInParent<Animator>();
+        anim = GetComponentInParent<Animator>();
         this.waitTime = delayAttackTime;
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        animator.SetBool("isAttacking", isAttacking);
+        if(anim) anim.SetBool("isAttacking", isAttacking);
         if (isAttacking)
         {
             this.waitTime = this.waitTime - Time.deltaTime; // cập nhật thời gian đợi còn lại
