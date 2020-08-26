@@ -82,8 +82,8 @@ public class DemonMoveAround : MonoBehaviour
             }
 
             delayRunTime -= Time.deltaTime; // cập nhật thời gian đợi còn lại
-            anim.SetBool("isRunning", isRunning); // bật animation tấn công
-            if (delayRunTime <= 0) // nếu hết thời gian đợi thì cho phép tấn công
+            anim.SetBool("isRunning", isRunning); // bật animation di chuyển
+            if (delayRunTime <= 0) // nếu hết thời gian đợi thì cho phép di chuyển
             { // nếu đến lúc di chuyển
                 isRunning = true;
                 delayRunTime = 0.2f; // cập nhật lại delayTime cho lần sau
@@ -127,7 +127,6 @@ public class DemonMoveAround : MonoBehaviour
         else if(!collision.gameObject.CompareTag("Enemy")) // quay lui khi gặp chướng ngại vật
         {
             isRunning = true;
-            moveDirection *= -1;
         }
     }
 
@@ -141,7 +140,6 @@ public class DemonMoveAround : MonoBehaviour
         else if (!collision.gameObject.CompareTag("Enemy")) // quay lui khi gặp chướng ngại vật
         {
             isRunning = true;
-            moveDirection *= -1;
         }
     }
 
@@ -149,8 +147,8 @@ public class DemonMoveAround : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            isRunning = true; // set trạng thái di chuyển
-            delayRunTime = 0.5f; // cho demon đứng yên 1s rồi tiếp tục di chuyển
+            isRunning = false; // set trạng thái ko di chuyển trong 0.5s
+            delayRunTime = 0.5f; // cho demon đứng yên 0.5s rồi tiếp tục di chuyển
         }
     }
 }

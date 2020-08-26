@@ -26,10 +26,11 @@ public class DemonAutoAttaking : MonoBehaviour
         {
             this.waitTime = this.waitTime - Time.deltaTime; // cập nhật thời gian đợi còn lại
             if (this.waitTime <= 0) 
-            { // nếu đến lúc di chuyển
+            { 
                 Player player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
                 player.SendMessage("Damage", damage); // gửi damage cho player
                 this.waitTime = delayAttackTime; // cập nhật lại delayTime cho lần sau
+                isAttacking = false;
             }
         }
     }
