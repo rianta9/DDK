@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: acda0115d4dd6cf43ad72dc5dca14458
+guid: 837d78ddff279a1468dc102b6eaf9ae4
 TextureImporter:
   fileIDToRecycleName:
-    21300000: castle3_0
-    21300002: castle3_1
-    21300004: castle3_2
-    21300006: castle3_4
-    21300008: castle3_5
-    21300010: castle3_6
+    21300000: wooden-boards_0
+    21300002: wooden-boards_1
+    21300004: wooden-boards_2
+    21300006: wooden-boards_3
+    21300008: wooden-boards_4
+    21300010: wooden-boards_5
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -79,13 +79,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: castle3_0
+      name: wooden-boards_0
       rect:
         serializedVersion: 2
-        x: 30
-        y: 201
-        width: 106
-        height: 178
+        x: 14
+        y: 126
+        width: 111
+        height: 146
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -93,19 +93,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5e44ac9790ad6e342b829fcb6456d5cb
+      spriteID: f6481fe31e5701440a75c369e66b98a4
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: castle3_1
+      name: wooden-boards_1
       rect:
         serializedVersion: 2
-        x: 253
-        y: 204
-        width: 100
-        height: 177
+        x: 99
+        y: 76
+        width: 73
+        height: 73
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -113,19 +113,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff326ccdf0ac7ec4cb9f978b43c7cfc0
+      spriteID: 254a942f74e735d47b159ee4f83f4098
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: castle3_2
+      name: wooden-boards_2
       rect:
         serializedVersion: 2
-        x: 455
-        y: 188
-        width: 146
-        height: 192
+        x: 136
+        y: 149
+        width: 112
+        height: 120
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -133,19 +133,39 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 30e9f4171e93961499c4ff7a48e08588
+      spriteID: 5bfbe442d98e22a42bb9831d389266f6
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: castle3_4
+      name: wooden-boards_3
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 28
+        width: 76
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2babd64d69cb9440a5cb4668885aed2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden-boards_4
       rect:
         serializedVersion: 2
         x: 8
-        y: 17
-        width: 178
-        height: 114
+        y: 28
+        width: 85
+        height: 97
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,19 +173,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8f6255a19749f4a45a051123b710c792
+      spriteID: 95adbecf559456b41bd38c4c76d9de81
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: castle3_5
+      name: wooden-boards_5
       rect:
         serializedVersion: 2
-        x: 218
-        y: 17
-        width: 178
-        height: 161
+        x: 95
+        y: 29
+        width: 77
+        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,27 +193,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 28892e68061c3a74e9e6040494985b66
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: castle3_6
-      rect:
-        serializedVersion: 2
-        x: 445
-        y: 19
-        width: 178
-        height: 157
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 584769b3f68dc8f4cbeb0af0dc6d1511
+      spriteID: f35d179e038dc6045b4a0ac9f964419a
       vertices: []
       indices: 
       edges: []
@@ -201,7 +201,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 3f37b9d8a98647c4cac0610237731e67
+    spriteID: beb7860ad4637924ab3abc4b53686ae4
     vertices: []
     indices: 
     edges: []

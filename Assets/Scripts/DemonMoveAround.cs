@@ -5,6 +5,7 @@ using UnityEngine;
 
 /*
  Demon tự động di chuyển qua về một vị trí(Theo hướng ngang).
+ Nếu player chạm vào demon này, demon sẽ đánh
  Add script này vào những vật thể game mong muốn.
  Nếu người chơi nằm trong phạm vi công kích, demon sẽ chủ động công kích.
  Nhớ set các thuộc tính cần thiết cho demon trong unity.
@@ -20,12 +21,12 @@ public class DemonMoveAround : MonoBehaviour
 
     public float movedLength = 0; // khoảng cách di chuyển so với vị trí ban đầu
     public float maxLength = 3; // khoảng cách di chuyển tối đa
-    public int faceDirection = 1; // hướng di chuyển ban đầu. Nếu mặt demon hướng về bên trái thì set -1, ngược lại set 1
+    public int faceDirection = 1; //  Nếu mặt demon hướng về bên trái thì set -1, ngược lại set 1
+    public int moveDirection = 1; // Hướng di chuyển. Nếu muốn đầu tiên demon di chuyển về bên trái thì set -1, ngược lại set 1
 
     public bool isRunning = true;
 
     public Animator anim;
-    AutoControlDemon control;
 
     public void setBlood(int blood)
     {
@@ -46,12 +47,11 @@ public class DemonMoveAround : MonoBehaviour
     private void Awake()
     {
         anim = GetComponent<Animator>();
-        control = FindObjectOfType<AutoControlDemon>();
+        moveDirection = faceDirection;
     }
 
     public void Death()
     {
-        control.SetDemonDied(true);
         Destroy(gameObject);
     }
 
@@ -79,23 +79,26 @@ public class DemonMoveAround : MonoBehaviour
 
                 /* di chuyển*/
 
-                // cập nhật hướng đi animate
                 Vector3 rem = transform.localScale;
-                if (faceDirection == -1) rem.x = -(Mathf.Abs(rem.x)); // mặt hướng về bên trái thì đi về bên trái
-                else rem.x = Mathf.Abs(rem.x); // mặt hướng về bên phải
+                // mặt hướng ngược lại so với faceDirection
+                if (moveDirection != faceDirection) rem.x = -(Mathf.Abs(rem.x)); 
+                else rem.x = Mathf.Abs(rem.x); // mặt hướng cùng với faceDirection
                 transform.localScale = rem;
 
                 // cập nhật vị trí demon
-                transform.position += new Vector3(faceDirection * 0.5f, 0, 0);
+                transform.position += new Vector3(moveDirection * 0.5f, 0, 0);
 
                 // tăng movelength lên 1 khoảng 0.2
                 movedLength += 0.2f;
 
+                
+
                 if (movedLength >= maxLength)
                 { // nếu khoảng cách di chuyển đã tối đa
+                  // cập nhật hướng đi animate
                     isRunning = false; // bật animation đứng yên
                     delayRunTime = Random.Range(2, 5); // cho demon đứng yên 2 đến 5s 
-                    faceDirection *= -1; // cho demon đổi hướng
+                    moveDirection *= -1; // cho demon đổi hướng
                     maxLength = 6; // cập nhật maxLength
                     movedLength = 0; // reset movedlength
                 }
@@ -113,7 +116,7 @@ public class DemonMoveAround : MonoBehaviour
         else if(!collision.gameObject.CompareTag("Enemy"))
         {
             isRunning = true;
-            faceDirection *= -1;
+            moveDirection *= -1;
         }
     }
 
@@ -125,8 +128,8 @@ public class DemonMoveAround : MonoBehaviour
             delayRunTime = int.MaxValue; // cho demon dừng di chuyển
             Player player = FindObjectOfType<Player>();
             if(player.transform.position.x > gameObject.transform.position.x)
-                faceDirection = 1;
-            else faceDirection = -1;
+                moveDirection = 1;
+            else moveDirection = -1;
         }
     }
 
