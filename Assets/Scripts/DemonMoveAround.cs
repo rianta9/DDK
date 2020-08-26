@@ -27,6 +27,8 @@ public class DemonMoveAround : MonoBehaviour
     public bool isRunning = true;
 
     public Animator anim;
+    Area area;
+    Player player;
 
     public void setBlood(int blood)
     {
@@ -48,6 +50,8 @@ public class DemonMoveAround : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         moveDirection = faceDirection;
+        area = GetComponentInChildren<Area>();
+        player = FindObjectOfType<Player>();
     }
 
     public void Death()
@@ -55,7 +59,7 @@ public class DemonMoveAround : MonoBehaviour
         Destroy(gameObject);
     }
 
-    void Update()
+    void FixedUpdate()
     {
         if (this.blood <= 0)
         {
@@ -70,6 +74,13 @@ public class DemonMoveAround : MonoBehaviour
 
         else
         {
+            if (area && area.isInRange)
+            {
+                if (player.transform.position.x > gameObject.transform.position.x)
+                    moveDirection = 1;
+                else moveDirection = -1;
+            }
+
             delayRunTime -= Time.deltaTime; // cập nhật thời gian đợi còn lại
             anim.SetBool("isRunning", isRunning); // bật animation tấn công
             if (delayRunTime <= 0) // nếu hết thời gian đợi thì cho phép tấn công
@@ -113,7 +124,7 @@ public class DemonMoveAround : MonoBehaviour
             isRunning = false; // set trạng thái ko di chuyển
             delayRunTime = int.MaxValue; // cho demon dừng di chuyển
         }
-        else if(!collision.gameObject.CompareTag("Enemy"))
+        else if(!collision.gameObject.CompareTag("Enemy")) // quay lui khi gặp chướng ngại vật
         {
             isRunning = true;
             moveDirection *= -1;
@@ -126,10 +137,11 @@ public class DemonMoveAround : MonoBehaviour
         {
             isRunning = false; // set trạng thái ko di chuyển
             delayRunTime = int.MaxValue; // cho demon dừng di chuyển
-            Player player = FindObjectOfType<Player>();
-            if(player.transform.position.x > gameObject.transform.position.x)
-                moveDirection = 1;
-            else moveDirection = -1;
+        }
+        else if (!collision.gameObject.CompareTag("Enemy")) // quay lui khi gặp chướng ngại vật
+        {
+            isRunning = true;
+            moveDirection *= -1;
         }
     }
 
@@ -137,7 +149,7 @@ public class DemonMoveAround : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            isRunning = false; // set trạng thái ko di chuyển
+            isRunning = true; // set trạng thái di chuyển
             delayRunTime = 0.5f; // cho demon đứng yên 1s rồi tiếp tục di chuyển
         }
     }

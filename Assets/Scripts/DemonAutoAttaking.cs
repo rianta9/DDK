@@ -19,7 +19,7 @@ public class DemonAutoAttaking : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         animator.SetBool("isAttacking", isAttacking); // bật animation di chuyển
         if (isAttacking)
