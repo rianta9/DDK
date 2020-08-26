@@ -9,7 +9,7 @@ public class Player : MonoBehaviour
     public Transform tran_player;
 
     public int MaxHealth = 100;
-    int currentHealth;
+    public int currentHealth;
     public HealthBar healthBar;
 
 
@@ -18,7 +18,7 @@ public class Player : MonoBehaviour
         currentHealth = MaxHealth;
         healthBar.setMaxHealth(MaxHealth);
         r2 = gameObject.GetComponent<Rigidbody2D>();
-        tran_player = gameObject.GetComponent<Transform>();
+
     }
 
     // Update is called once per frame
@@ -32,7 +32,7 @@ public class Player : MonoBehaviour
 
     public void Death()
     {
-
+        if (gameOverSound) audioSource.PlayOneShot(gameOverSound, 0.8f);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
     void TakeDamage(int damage)
@@ -57,5 +57,13 @@ public class Player : MonoBehaviour
         //    r2.AddForce(Vector2.left * pow);
         //}
 
+    }
+
+    public void Damage(int damage)
+    {
+        this.currentHealth -= damage;
+        healthBar.setHealth(currentHealth);
+        if (currentHealth <= 0)
+            Death();
     }
 }
