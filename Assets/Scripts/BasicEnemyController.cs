@@ -10,12 +10,13 @@ public class BasicEnemyController : MonoBehaviour
     [SerializeField] private LayerMask WhatIsGround;
     [Range(0, 8f)] [SerializeField] private float left_limit = .05f;
     [Range(0, 8f)] [SerializeField] private float right_limit = .05f;
-    [SerializeField] private int MaxHealth;
+    [SerializeField] private int MaxHealth = 1000;
     private int currentHealth;
 
     public Transform Enemy;
     public Rigidbody2D r2;
     public bool isBound;
+    public Animator animator;
 
     private bool isGround, isWall , faceright = true;
     Vector2 velocity_temp;
@@ -31,6 +32,7 @@ public class BasicEnemyController : MonoBehaviour
         Enemy = gameObject.GetComponent<Transform>();
         r2 = gameObject.GetComponent<Rigidbody2D>();
         CurrentPotion = Enemy.transform.position.x;
+        currentHealth = MaxHealth;
     }
 
     // Update is called once per frame
@@ -106,5 +108,72 @@ public class BasicEnemyController : MonoBehaviour
     public void CanChangeFalse()
     {
         CanChangeFlip = false;
+    }
+    void TakeDamage(int Damage)
+    {
+        
+
+        currentHealth -= Damage;
+        if(currentHealth <= 0)
+        {
+            Dead();
+        }
+        else
+        {
+            KockBack();
+        }
+        
+    }
+    void Dead()
+    {
+
+        animator.SetBool("Die",true);
+        animator.SetBool("KockBack",false);
+        animator.SetBool("Attack",false);
+    }
+    void resetKockBack()
+    {
+        animator.SetBool("KockBack", false);
+    }
+    void KockBack()
+    {
+        animator.SetBool("KockBack", true);
+        r2.AddForce(Vector2.up * 100f);
+
+    }
+    void AttackForce()
+    {
+        if (faceright)
+        {
+           r2.AddForce(Vector2.right * 1000f);
+        }
+        else
+        {
+           r2.AddForce(Vector2.left * 1000f);
+        }
+
+    }
+    void Die()
+    {
+        GetComponent<CircleCollider2D>().enabled = false;
+        
+    }
+    void Died()
+    {
+
+        GetComponent<Collider2D>().enabled = false;
+        GetComponent<Rigidbody2D>().simulated = false;
+        ///GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
+        this.enabled = false;
+    }
+    void TieuHuy(float TimeWait)
+    {
+        StartCoroutine(TrongTieuHuyKhiDie(TimeWait));
+    }
+    IEnumerator TrongTieuHuyKhiDie(float waitTime)
+    {
+
+        yield return new WaitForSeconds(waitTime);
+        Destroy(gameObject);
     }
 }
