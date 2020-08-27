@@ -17,8 +17,10 @@ public class BasicEnemyController : MonoBehaviour
     public Rigidbody2D r2;
     public bool isBound;
     public Animator animator;
+    public bool StartLeft;
 
-    private bool isGround, isWall , faceright = true;
+    private bool faceright = true;
+    private bool isGround, isWall ;
     Vector2 velocity_temp;
     private int ChieuMove = 1;
 
@@ -33,6 +35,11 @@ public class BasicEnemyController : MonoBehaviour
         r2 = gameObject.GetComponent<Rigidbody2D>();
         CurrentPotion = Enemy.transform.position.x;
         currentHealth = MaxHealth;
+        if (StartLeft)
+        {
+            Flip();
+        }
+        
     }
 
     // Update is called once per frame

@@ -12,6 +12,7 @@ public class Player : MonoBehaviour
     int currentHealth;
     public HealthBar healthBar;
 
+    public bool isKockBack;
 
     void Start()
     {
@@ -46,6 +47,7 @@ public class Player : MonoBehaviour
     public void Knockback(int pow, float huong)
     {
         r2.AddForce(Vector2.up * pow);
+        isKockBack = true;
         //if (huong  == 180)
         //{
         //    r2.AddForce(Vector2.up * pow);
