@@ -16,7 +16,9 @@ public class Spike : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
         time = refreshTime;
+
 
     }
 
@@ -54,5 +56,13 @@ public class Spike : MonoBehaviour
             }
         }
         
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            time = 0;
+        }
     }
 }
