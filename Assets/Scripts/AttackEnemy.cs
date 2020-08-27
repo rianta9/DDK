@@ -9,7 +9,7 @@ public class AttackEnemy : MonoBehaviour
     public float AttackRange;
     public int Damage_enemy;
 
-    [SerializeField] private LayerMask WhatIsPlayer;
+    [SerializeField] private LayerMask WhatIsPlayer = 0;
     public Animator animator;
     public BasicEnemyController enemyController;
     public Rigidbody2D r2;

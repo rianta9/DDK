@@ -12,6 +12,7 @@ public class Player : MonoBehaviour
     public int currentHealth;
     public HealthBar healthBar;
 
+    public bool isKockBack;
 
     void Start()
     {
@@ -32,7 +33,7 @@ public class Player : MonoBehaviour
 
     public void Death()
     {
-        if (gameOverSound) audioSource.PlayOneShot(gameOverSound, 0.8f);
+        //if (gameOverSound) audioSource.PlayOneShot(gameOverSound, 0.8f);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
     void TakeDamage(int damage)
@@ -46,6 +47,7 @@ public class Player : MonoBehaviour
     public void Knockback(int pow, float huong)
     {
         r2.AddForce(Vector2.up * pow);
+        isKockBack = true;
         //if (huong  == 180)
         //{
         //    r2.AddForce(Vector2.up * pow);
