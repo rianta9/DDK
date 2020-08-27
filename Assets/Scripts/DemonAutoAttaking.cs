@@ -42,7 +42,7 @@ public class DemonAutoAttaking : MonoBehaviour
                     this.attackTime = delayAttackTime; // cập nhật lại attackTime cho lần sau
 
                     Player player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
-                    player.SendMessage("Damage", damage); // gửi damage cho player
+                    player.SendMessage("TakeDamage", damage); // gửi damage cho player
                 }
             }
             else if (anim) anim.SetBool("isAttacking", false);

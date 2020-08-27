@@ -47,7 +47,7 @@ public class Thunder : MonoBehaviour
                 if(thunder && thunderArea.isInRange) audioSource.PlayOneShot(thunder, 0.1f); // âm thanh sấm
                 if (isInRange)
                 {
-                    player.SendMessage("Damage", damage); // gửi damage cho player
+                    player.SendMessage("TakeDamage", damage); // gửi damage cho player
                     isInRange = false;
                 }
                 isFalling = false;
