@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -44,19 +45,19 @@ public class Player : MonoBehaviour
         if (currentHealth <= 0)
             Death();
     }
-    public void Knockback(int pow, float huong)
+    public void Knockback(Vector2 PowHuong)
     {
-     
+        //x pow ,y = huong;
         isKockBack = true;
-        if (huong < 0)
+        if (PowHuong.y < 0)
         {
-            r2.AddForce(Vector2.up * pow);
-            r2.AddForce(Vector2.right * pow);
+            r2.AddForce(Vector2.up * PowHuong.x * 1.25f);
+            r2.AddForce(Vector2.right * PowHuong.x * 1.5f);
         }
         else
         {
-            r2.AddForce(Vector2.up * pow);
-            r2.AddForce(Vector2.left * pow);
+            r2.AddForce(Vector2.up * PowHuong.x * 1.25f);
+            r2.AddForce(Vector2.left * PowHuong.x * 1.5f);
         }
 
     }

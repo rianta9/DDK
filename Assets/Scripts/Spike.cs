@@ -26,6 +26,20 @@ public class Spike : MonoBehaviour
         
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+           
+           
+                
+                Player player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+                player.SendMessageUpwards("TakeDamage", damage);
+               
+         
+        }
+
+    }
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
@@ -35,15 +49,8 @@ public class Spike : MonoBehaviour
             {
                 time = refreshTime;
                 Player player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
-                player.SendMessage("TakeDamage", damage);
-                if(player.transform.rotation.y == 180)
-                {
-                    player.SendMessage("Knockback", -1);//day ve ben phai
-                }
-                else
-                {
-                    player.SendMessage("Knockback", 1);//day ve ben trai
-                }
+                player.SendMessageUpwards("TakeDamage", damage);
+                
             }
         }
         
