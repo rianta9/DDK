@@ -11,6 +11,8 @@ public class DemonAutoAttaking : MonoBehaviour
     [SerializeField] private float attackTime; // đếm thời gian tấn công
     public bool isAttacking = false;
     public Animator anim;
+    public AudioSource audioSource;
+    public AudioClip music;
 
 
     // Start is called before the first frame update
@@ -19,6 +21,7 @@ public class DemonAutoAttaking : MonoBehaviour
         anim = GetComponentInParent<Animator>();
         this.waitTime = 0;
         this.attackTime = delayAttackTime;
+        audioSource = gameObject.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -33,6 +36,8 @@ public class DemonAutoAttaking : MonoBehaviour
                 attackTime -= Time.deltaTime; // cập nhập thời gian sử dụng kỹ năng tấn công
                 if (attackTime <= 0)
                 {
+                    if(audioSource && music && !audioSource.isPlaying) audioSource.PlayOneShot(music);
+
                     this.waitTime = delayWaitTime; // cập nhật lại delayTime cho lần sau
                     this.attackTime = delayAttackTime; // cập nhật lại attackTime cho lần sau
 
