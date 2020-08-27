@@ -16,7 +16,10 @@ public class Spike : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        time = 0;
+
+        time = refreshTime;
+
+
     }
 
     // Update is called once per frame
@@ -25,6 +28,20 @@ public class Spike : MonoBehaviour
         
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+           
+           
+                
+                Player player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+                player.SendMessageUpwards("TakeDamage", damage);
+               
+         
+        }
+
+    }
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
@@ -34,7 +51,8 @@ public class Spike : MonoBehaviour
             {
                 time = refreshTime;
                 Player player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
-                player.SendMessage("Damage", damage);
+                player.SendMessageUpwards("TakeDamage", damage);
+                
             }
         }
         

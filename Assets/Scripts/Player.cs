@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -40,32 +41,26 @@ public class Player : MonoBehaviour
     {
         currentHealth -= damage;
         healthBar.setHealth(currentHealth);
-        Knockback(100, tran_player.rotation.y);
+       
         if (currentHealth <= 0)
             Death();
     }
-    public void Knockback(int pow, float huong)
+    public void Knockback(Vector2 PowHuong)
     {
-        r2.AddForce(Vector2.up * pow);
+        //x pow ,y = huong;
         isKockBack = true;
-        //if (huong  == 180)
-        //{
-        //    r2.AddForce(Vector2.up * pow);
-        //    r2.AddForce(Vector2.right * pow);
-        //}
-        //else
-        //{
-        //    r2.AddForce(Vector2.up * pow);
-        //    r2.AddForce(Vector2.left * pow);
-        //}
+        if (PowHuong.y < 0)
+        {
+            r2.AddForce(Vector2.up * PowHuong.x * 1.25f);
+            r2.AddForce(Vector2.right * PowHuong.x * 1.5f);
+        }
+        else
+        {
+            r2.AddForce(Vector2.up * PowHuong.x * 1.25f);
+            r2.AddForce(Vector2.left * PowHuong.x * 1.5f);
+        }
 
     }
 
-    public void Damage(int damage)
-    {
-        this.currentHealth -= damage;
-        healthBar.setHealth(currentHealth);
-        if (currentHealth <= 0)
-            Death();
-    }
+    
 }
