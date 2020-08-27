@@ -220,7 +220,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 5
   delayAttackTime: 1
-  delayWaitTime: 0.5
+  delayWaitTime: 1
   waitTime: 0
   attackTime: 0
   isAttacking: 0
