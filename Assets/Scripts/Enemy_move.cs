@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
-using UnityEngine.Rendering;
+
 
 public class Enemy_move : MonoBehaviour
 {
@@ -30,10 +30,11 @@ public class Enemy_move : MonoBehaviour
         left_x = transform.position.x - left_limit;
         right_x = transform.position.x + right_limit;
         time_idle = Time.time;
+        
     }
     // Update is called once per frame
     void FixedUpdate()
-    {   
+    {
         
         if(enemy.currentHealth > 0)
         {
