@@ -17,6 +17,7 @@ public class Spike : MonoBehaviour
     void Start()
     {
         time = refreshTime;
+
     }
 
     // Update is called once per frame
@@ -34,7 +35,15 @@ public class Spike : MonoBehaviour
             {
                 time = refreshTime;
                 Player player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
-                player.SendMessage("Damage", damage);
+                player.SendMessage("TakeDamage", damage);
+                if(player.transform.rotation.y == 180)
+                {
+                    player.SendMessage("Knockback", -1);//day ve ben phai
+                }
+                else
+                {
+                    player.SendMessage("Knockback", 1);//day ve ben trai
+                }
             }
         }
         

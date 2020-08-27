@@ -40,32 +40,26 @@ public class Player : MonoBehaviour
     {
         currentHealth -= damage;
         healthBar.setHealth(currentHealth);
-        Knockback(100, tran_player.rotation.y);
+       
         if (currentHealth <= 0)
             Death();
     }
     public void Knockback(int pow, float huong)
     {
-        r2.AddForce(Vector2.up * pow);
+     
         isKockBack = true;
-        //if (huong  == 180)
-        //{
-        //    r2.AddForce(Vector2.up * pow);
-        //    r2.AddForce(Vector2.right * pow);
-        //}
-        //else
-        //{
-        //    r2.AddForce(Vector2.up * pow);
-        //    r2.AddForce(Vector2.left * pow);
-        //}
+        if (huong < 0)
+        {
+            r2.AddForce(Vector2.up * pow);
+            r2.AddForce(Vector2.right * pow);
+        }
+        else
+        {
+            r2.AddForce(Vector2.up * pow);
+            r2.AddForce(Vector2.left * pow);
+        }
 
     }
 
-    public void Damage(int damage)
-    {
-        this.currentHealth -= damage;
-        healthBar.setHealth(currentHealth);
-        if (currentHealth <= 0)
-            Death();
-    }
+    
 }
