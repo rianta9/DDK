@@ -3781,16 +3781,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Demon2
       objectReference: {fileID: 0}
-    - target: {fileID: 7350214218542206266, guid: 0102a72703f802f42b7c82102b8a6407,
-        type: 3}
-      propertyPath: m_Offset.x
-      value: 0.7182312
-      objectReference: {fileID: 0}
-    - target: {fileID: 7350214218542206266, guid: 0102a72703f802f42b7c82102b8a6407,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 1.8222656
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0102a72703f802f42b7c82102b8a6407, type: 3}
 --- !u!1001 &325058524
@@ -14753,7 +14743,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 5
   delayAttackTime: 1
+  delayWaitTime: 1
   waitTime: 0
+  attackTime: 0
   isAttacking: 0
   anim: {fileID: 0}
 --- !u!1001 &1199028735
@@ -17202,12 +17194,12 @@ PrefabInstance:
     - target: {fileID: 7194907007373257284, guid: cbe2962b8468325438e79c4f07eebc5f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 152.49214
+      value: 152.795
       objectReference: {fileID: 0}
     - target: {fileID: 7194907007373257284, guid: cbe2962b8468325438e79c4f07eebc5f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -11.228842
+      value: -10.83
       objectReference: {fileID: 0}
     - target: {fileID: 7194907007373257284, guid: cbe2962b8468325438e79c4f07eebc5f,
         type: 3}
@@ -24057,7 +24049,7 @@ PrefabInstance:
     - target: {fileID: 1369155054067622578, guid: e740eb714db13f3469d6cc7d6cbae363,
         type: 3}
       propertyPath: MaxHealth
-      value: 500
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 1369155054067622586, guid: e740eb714db13f3469d6cc7d6cbae363,
         type: 3}
@@ -27098,12 +27090,12 @@ PrefabInstance:
     - target: {fileID: 9054214726525746996, guid: 06447011ebdd37845b1a74038c541237,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 62.97
+      value: 63.53
       objectReference: {fileID: 0}
     - target: {fileID: 9054214726525746996, guid: 06447011ebdd37845b1a74038c541237,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -10.46
+      value: -9.75
       objectReference: {fileID: 0}
     - target: {fileID: 9054214726525746996, guid: 06447011ebdd37845b1a74038c541237,
         type: 3}

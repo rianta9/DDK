@@ -59,7 +59,7 @@ public class DemonMoveAround : MonoBehaviour
         Destroy(gameObject);
     }
 
-    void FixedUpdate()
+    void Update()
     {
         if (this.blood <= 0)
         {

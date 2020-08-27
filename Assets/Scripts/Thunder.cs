@@ -32,7 +32,7 @@ public class Thunder : MonoBehaviour
         //thunderArea = GameObject.FindObjectOfType<ThunderArea>();
         thunderArea = gameObject.GetComponentInParent<Area>();
         currentRandomTime = randomTime;
-        currentWaitTime = waitTime;
+        currentWaitTime = 0;
     }
 
     // Update is called once per frame
@@ -69,7 +69,10 @@ public class Thunder : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player")) isInRange = true;
+        if (collision.CompareTag("Player"))
+        {
+            isInRange = true;
+        }
     }
 
     //private void OnTriggerStay2D(Collider2D collision)
@@ -79,6 +82,10 @@ public class Thunder : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player")) isInRange = false;
+        if (collision.CompareTag("Player"))
+        {
+            isInRange = false;
+            currentWaitTime = 0;
+        }
     }
 }

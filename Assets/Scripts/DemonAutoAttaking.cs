@@ -6,7 +6,7 @@ public class DemonAutoAttaking : MonoBehaviour
 {
     public int damage = 5; // damge mỗi lần tấn công
     public float delayAttackTime = 0.5f; // thời gian sử dụng kỹ năng tấn công(lấy thời gian ở animation attack + 0.2(thời gian chênh lệch))
-    public float delayWaitTime = 1.0f; // thời gian đợi sau mỗi lượt tấn công
+    public float delayWaitTime = 0.5f; // thời gian đợi sau mỗi lượt tấn công
     [SerializeField] private float waitTime; // đếm thời gian đợi
     [SerializeField] private float attackTime; // đếm thời gian tấn công
     public bool isAttacking = false;
@@ -22,7 +22,7 @@ public class DemonAutoAttaking : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
         if (isAttacking)
         {
@@ -47,7 +47,17 @@ public class DemonAutoAttaking : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player")) isAttacking = true;
+        if (collision.CompareTag("Player"))
+        {
+            isAttacking = true;
+            DemonMoveAround script = gameObject.GetComponentInParent<DemonMoveAround>();
+            if (script)
+            {
+                script.isRunning = false;
+                script.delayRunTime = int.MaxValue;
+                script.anim.SetBool("isRunning", script.isRunning);
+            }
+        }
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -69,12 +79,12 @@ public class DemonAutoAttaking : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             isAttacking = false;
+            this.waitTime = 0;
+            this.attackTime = delayAttackTime;
             DemonMoveAround script = gameObject.GetComponentInParent<DemonMoveAround>();
             if (script)
             {
-                script.isRunning = true;
-                script.delayRunTime = 0.5f;
-                script.anim.SetBool("isRunning", script.isRunning);
+                script.delayRunTime = 0.5f; // refresh delayRunTime
             }
         }
     }
