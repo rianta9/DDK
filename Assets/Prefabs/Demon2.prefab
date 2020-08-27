@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7350214218076458188}
   m_Layer: 0
   m_Name: Demon2
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -295,4 +295,4 @@ MonoBehaviour:
   delayAttackTime: 1
   waitTime: 0
   isAttacking: 0
-  animator: {fileID: 0}
+  anim: {fileID: 0}
