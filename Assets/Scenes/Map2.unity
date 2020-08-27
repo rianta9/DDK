@@ -12641,6 +12641,12 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!4 &1031422462 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1369155054067622586, guid: e740eb714db13f3469d6cc7d6cbae363,
+    type: 3}
+  m_PrefabInstance: {fileID: 1985209228}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1034246639
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13777,10 +13783,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   smoothtimeX: 0.03
   smoothtimeY: 0.03
-  player: {fileID: 0}
   minpos: {x: -36, y: -12}
   maxpos: {x: 500, y: 40}
   bound: 1
+  player: {fileID: 1031422462}
 --- !u!1 &1102179054
 GameObject:
   m_ObjectHideFlags: 0
