@@ -27,6 +27,8 @@ public class DemonMoveAround : MonoBehaviour
     public bool isRunning = true;
 
     public Animator anim;
+    Area area;
+    Player player;
 
     public void setBlood(int blood)
     {
@@ -48,6 +50,8 @@ public class DemonMoveAround : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         moveDirection = faceDirection;
+        area = GetComponentInChildren<Area>();
+        player = FindObjectOfType<Player>();
     }
 
     public void Death()
@@ -62,39 +66,27 @@ public class DemonMoveAround : MonoBehaviour
             anim.SetBool("isDied", true);
             //anim.SetBool("isRunning", false); // bật animation di chuyển
             delayDieTime -= Time.deltaTime;
-            if (delayDieTime <= 0)
-            {
-                Death();
-            }
+            if (delayDieTime <= 0) Death();
         }
 
         else
         {
+            if (area && area.isInRange) // nếu player nằm trong khu vực hoạt động của demon
+            {
+                if (player.transform.position.x > gameObject.transform.position.x) // demon sẽ đi hướng về player
+                    moveDirection = 1;
+                else moveDirection = -1;
+            }
+
             delayRunTime -= Time.deltaTime; // cập nhật thời gian đợi còn lại
-            anim.SetBool("isRunning", isRunning); // bật animation tấn công
-            if (delayRunTime <= 0) // nếu hết thời gian đợi thì cho phép tấn công
-            { // nếu đến lúc di chuyển
-                isRunning = true;
+            if (delayRunTime <= 0) // nếu hết thời gian đợi thì cho phép di chuyển
+            {
                 delayRunTime = 0.2f; // cập nhật lại delayTime cho lần sau
-
                 /* di chuyển*/
+                isRunning = true; 
 
-                Vector3 rem = transform.localScale;
-                // mặt hướng ngược lại so với faceDirection
-                if (moveDirection != faceDirection) rem.x = -(Mathf.Abs(rem.x)); 
-                else rem.x = Mathf.Abs(rem.x); // mặt hướng cùng với faceDirection
-                transform.localScale = rem;
-
-                // cập nhật vị trí demon
-                transform.position += new Vector3(moveDirection * 0.5f, 0, 0);
-
-                // tăng movelength lên 1 khoảng 0.2
-                movedLength += 0.2f;
-
-                
-
-                if (movedLength >= maxLength)
-                { // nếu khoảng cách di chuyển đã tối đa
+                if (movedLength >= maxLength) // nếu khoảng cách di chuyển đã tối đa
+                { 
                   // cập nhật hướng đi animate
                     isRunning = false; // bật animation đứng yên
                     delayRunTime = Random.Range(2, 5); // cho demon đứng yên 2 đến 5s 
@@ -102,43 +94,27 @@ public class DemonMoveAround : MonoBehaviour
                     maxLength = 6; // cập nhật maxLength
                     movedLength = 0; // reset movedlength
                 }
+
+                if (isRunning)
+                {
+                    updateFaceDirection(); // cập nhật hướng nhìn của demon
+                    // cập nhật vị trí demon
+                    transform.position += new Vector3(moveDirection * 0.5f, 0, 0);
+                    // tăng movelength lên 1 khoảng 0.2
+                    movedLength += 0.2f;
+                }
+
+                anim.SetBool("isRunning", isRunning); // cập nhật trạng thái isRunning của animation
             }
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void updateFaceDirection()
     {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            isRunning = false; // set trạng thái ko di chuyển
-            delayRunTime = int.MaxValue; // cho demon dừng di chuyển
-        }
-        else if(!collision.gameObject.CompareTag("Enemy"))
-        {
-            isRunning = true;
-            moveDirection *= -1;
-        }
-    }
-
-    private void OnCollisionStay2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            isRunning = false; // set trạng thái ko di chuyển
-            delayRunTime = int.MaxValue; // cho demon dừng di chuyển
-            Player player = FindObjectOfType<Player>();
-            if(player.transform.position.x > gameObject.transform.position.x)
-                moveDirection = 1;
-            else moveDirection = -1;
-        }
-    }
-
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            isRunning = false; // set trạng thái ko di chuyển
-            delayRunTime = 0.5f; // cho demon đứng yên 1s rồi tiếp tục di chuyển
-        }
+        Vector3 rem = transform.localScale; // lấy scale của demon
+        // nếu moveDirection khác với faceDirection
+        if (moveDirection != faceDirection) rem.x = -(Mathf.Abs(rem.x)); // lật ảnh về phía ngược lại
+        else rem.x = Mathf.Abs(rem.x); // mặt hướng cùng với faceDirection
+        transform.localScale = rem;
     }
 }
