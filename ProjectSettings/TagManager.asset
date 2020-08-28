@@ -10,6 +10,7 @@ TagManager:
   - Bird
   - ThanhGo
   - Boss
+  - HealthBarBoss
   layers:
   - Default
   - TransparentFX
