@@ -15,12 +15,17 @@ public class Player : MonoBehaviour
 
     public bool isKockBack;
 
+    public SpriteRenderer playerSprite;
+    public float TimeTakeDamage = .4f;
+
+    bool isTakeDamage = false,isSpriteActive = true;
+
     void Start()
     {
         currentHealth = MaxHealth;
         healthBar.setMaxHealth(MaxHealth);
         r2 = gameObject.GetComponent<Rigidbody2D>();
-
+        playerSprite = gameObject.GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -29,6 +34,19 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             TakeDamage(10);
+        }
+        if (isTakeDamage)
+        {
+            isSpriteActive = !isSpriteActive;
+            if (isSpriteActive)
+            {
+                playerSprite.color = Color.white;
+            }
+            else
+            {
+                playerSprite.color = Color.red;
+            }
+            //playerSprite.enabled = isSpriteActive;
         }
     }
 
@@ -41,9 +59,14 @@ public class Player : MonoBehaviour
     {
         currentHealth -= damage;
         healthBar.setHealth(currentHealth);
-       
+        
         if (currentHealth <= 0)
             Death();
+        else
+        {
+            isTakeDamage = true;
+            StartCoroutine(WhiteFlash(TimeTakeDamage));
+        }
     }
     public void Knockback(Vector2 PowHuong)
     {
@@ -62,5 +85,12 @@ public class Player : MonoBehaviour
 
     }
 
-    
+    IEnumerator WhiteFlash(float time)
+    {
+        yield return new WaitForSeconds(time);
+        isTakeDamage = false;
+        isSpriteActive = true;
+        playerSprite.color = Color.white;
+        //playerSprite.enabled = true;
+    }
 }
