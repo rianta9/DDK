@@ -14,6 +14,7 @@ public class Boss : MonoBehaviour
     public Transform player;
     public bool isFlipped = false;
 
+    public bool isBienHinh = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -36,18 +37,25 @@ public class Boss : MonoBehaviour
     }
     public void Death()
     {
-        StartCoroutine(XoaHealthBarBoss(1.2f));
+        GetComponent<Animator>().SetBool("IsDie", true);
+        StartCoroutine(XoaHealthBarBoss(2.2f));
         healthBar.enabled = false;
         
         
     }
     void TakeDamage(int damage)
     {
+        if (isBienHinh)
+            return;
         currentHealth -= damage;
         healthBar.setHealth(currentHealth);
 
         if (currentHealth <= 0)
             Death();
+        else if(currentHealth <= MaxHealth*0.3f)
+        {
+            GetComponent<Animator>().SetBool("IsEnraged",true);
+        }
     }
     IEnumerator XoaHealthBarBoss(float WaitTime)
     {
@@ -72,5 +80,9 @@ public class Boss : MonoBehaviour
             transform.Rotate(0, 180, 0);
             isFlipped = true;
         }
+    }
+    public void BuffHP(int HP_up)
+    {
+        currentHealth += HP_up;
     }
 }

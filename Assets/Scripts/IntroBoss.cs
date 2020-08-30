@@ -6,6 +6,7 @@ public class IntroBoss : MonoBehaviour
 {
     bool End = false;
     public GameObject BossChinh;
+    public GameObject HealthBarBoss;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +19,7 @@ public class IntroBoss : MonoBehaviour
         if (End)
         {
             BossChinh.SetActive(true);
+            HealthBarBoss.SetActive(true);
             Destroy(gameObject);
         }
     }

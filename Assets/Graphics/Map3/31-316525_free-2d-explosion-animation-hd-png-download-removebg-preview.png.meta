@@ -1,0 +1,1012 @@
+fileFormatVersion: 2
+guid: 2687aeb126b759b47abb2f0e39f180d3
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_0
+    21300002: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_1
+    21300004: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_2
+    21300006: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_3
+    21300008: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_4
+    21300010: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_5
+    21300012: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_6
+    21300014: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_7
+    21300016: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_8
+    21300018: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_9
+    21300020: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_10
+    21300022: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_11
+    21300024: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_12
+    21300026: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_13
+    21300028: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_14
+    21300030: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_15
+    21300032: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_16
+    21300034: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_17
+    21300036: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_18
+    21300038: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_19
+    21300040: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_20
+    21300042: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_21
+    21300044: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_22
+    21300046: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_23
+    21300048: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_24
+    21300050: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_25
+    21300052: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_26
+    21300054: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_27
+    21300056: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_28
+    21300058: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_29
+    21300060: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_30
+    21300062: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_31
+    21300064: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_32
+    21300066: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_33
+    21300068: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_34
+    21300070: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_35
+    21300072: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_36
+    21300074: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_37
+    21300076: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_38
+    21300078: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_39
+    21300080: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_40
+    21300082: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_41
+    21300084: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_42
+    21300086: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_43
+  externalObjects: {}
+  serializedVersion: 9
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_0
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 379
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f78581a8324be744a9841a066d2bf152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_1
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 376
+        width: 19
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 988974ad52e650f4ba9cf68f26608122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_2
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 374
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad3b2b6f7c9ac204db4ef71aab9d42ee
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_3
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 372
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c403ad771d94f8e4c90d0c86dacf56f7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_4
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 371
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae110d4ce7c37c14f8ca985f35e8433b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_5
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 370
+        width: 33
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59f6c42e1ab87694b98b70c739855bad
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_6
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 369
+        width: 37
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98ed88ddcde3ea64682dd475fb90f654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_7
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 368
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24fc98939790e2f49af0fcba6bd0e8ea
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_8
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 302
+        width: 41
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd33c81a0029ec6499fdeda8da133bf6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_9
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 300
+        width: 43
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9533e93b8ba5aef4db19523f47b8e1f1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_10
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 300
+        width: 44
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a16d3e397f058f4a8cf69d1072e366f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_11
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 299
+        width: 45
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 402b46dd164774045b98963f8561dad6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_12
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 299
+        width: 47
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bce629995251da247855749f76f00df0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_13
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 298
+        width: 48
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 069cb5686b2cc294fbd11852e2109f89
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_14
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 298
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a6d56079f84f2248bea7ec5222d6468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_15
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 298
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d31374a8966b8a46aefb724ca682919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_16
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 231
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21e862cf35db5854c97e360cc2b2a49b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_17
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 230
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3660a7909a77d9445a3ffa0696e55bf2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_18
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 229
+        width: 50
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f16e3de18ed4cf45aca95f6aceb65fa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_19
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 229
+        width: 51
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeb70b89600111e42b14c84573b45541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_20
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 229
+        width: 51
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 933d48faacda498428da6f22b9fb545b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_21
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 228
+        width: 51
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60a9e886222014942b14145d9472be94
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_22
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 228
+        width: 52
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bd95549b226f2f478d320d5ca55f2c3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_23
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 229
+        width: 51
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9961c8d51ed2f1c479c2e47cca6a3da2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_24
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 163
+        width: 52
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 144b7e8f714c62546b1bae1a3cffa058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_25
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 163
+        width: 52
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60b214b8433597c41af49d02e0325e90
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_26
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 162
+        width: 52
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56ba49138ccfc804bad225552b67fe82
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_27
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 162
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b1e1f7fb84bf394aa5d4914c5861760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_28
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 162
+        width: 54
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03f0075899bae1845a6ab88015e86ff0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_29
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 162
+        width: 53
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e5bd6c9717e8ce4a9935aee453f6c9c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_30
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 162
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c283fd8a250a7b74e85521f3a808ca7c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_31
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 162
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebb0204d35b3cc74e834a2ed11f3afed
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_32
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 96
+        width: 55
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3a3cc2a241dd954f9d16dbdd0efc955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_33
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b95842f2d484b2747be819df3f0cce14
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_34
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 95
+        width: 56
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e53b8e95f7d785448906976e8fcc776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_35
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 95
+        width: 56
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cc66be11f0df8e4382d079f885b5682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_36
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 95
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e615d90ff5a8ee84a9c199efdeb06128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_37
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 100
+        width: 53
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45e69b4d6c3fef2499dd4f70300cdef4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_38
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 100
+        width: 52
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91825f4fec41a484886ff3f667f4ae35
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_39
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 100
+        width: 52
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 706a62d6922d13a479a10a9f7b8c84d9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_40
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 34
+        width: 52
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e0f5596d3a2a36429a69fe635a18de2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_41
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 34
+        width: 50
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47f21e55d3027a94d94fc6649429ce59
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_42
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 34
+        width: 46
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cf39a7193b8f1f498ca8ffba7753704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 31-316525_free-2d-explosion-animation-hd-png-download-removebg-preview_43
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 35
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a407064bcb0e61c408b6b3fd8541b198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 84a9fc97472395b4ba947a3e88df64f6
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
