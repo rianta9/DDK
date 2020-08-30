@@ -11,6 +11,7 @@ TagManager:
   - ThanhGo
   - Boss
   - HealthBarBoss
+  - Bullet
   layers:
   - Default
   - TransparentFX
