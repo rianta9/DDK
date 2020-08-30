@@ -84,5 +84,6 @@ public class Boss : MonoBehaviour
     public void BuffHP(int HP_up)
     {
         currentHealth += HP_up;
+        healthBar.setHealth(currentHealth);
     }
 }
