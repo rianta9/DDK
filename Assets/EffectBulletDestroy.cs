@@ -18,4 +18,5 @@ public class EffectBulletDestroy : MonoBehaviour
     {
         isDestroy = true;
     }
+  
 }
