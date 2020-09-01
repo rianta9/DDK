@@ -1,20 +1,28 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Boss : MonoBehaviour
 {
+    [Header("Boss")]
     public int MaxHealth = 100;
     public int currentHealth;
     public HealthBar healthBar;
     public GameObject healthBarboss;
-
+    public DoorDichChuyen doorQuaCua;
+    public GameObject ThungCan;
 
     //lookatplayer
     public Transform player;
     public bool isFlipped = false;
 
     public bool isBienHinh = false;
+    public NPC_DoiThoai HoanThanhNPC;
+
+    [Header("BossChat")]
+    public Text BossText;
+    public string NoiDungTranTroi;
     // Start is called before the first frame update
     void Start()
     {
@@ -40,7 +48,7 @@ public class Boss : MonoBehaviour
         GetComponent<Animator>().SetBool("IsDie", true);
         StartCoroutine(XoaHealthBarBoss(2.2f));
         healthBar.enabled = false;
-        
+        BossText.text = NoiDungTranTroi;
         
     }
     void TakeDamage(int damage)
@@ -61,6 +69,10 @@ public class Boss : MonoBehaviour
     {
         yield return new WaitForSeconds(WaitTime);
         healthBarboss.SetActive(false);
+        doorQuaCua.OpenDoor(true);
+        HoanThanhNPC.IsBossDie = true;
+        BossText.text = "";
+        Destroy(ThungCan.gameObject);
         Destroy(gameObject);
     }
 
@@ -87,3 +99,4 @@ public class Boss : MonoBehaviour
         healthBar.setHealth(currentHealth);
     }
 }
+

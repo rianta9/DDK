@@ -12,6 +12,9 @@ TagManager:
   - Boss
   - HealthBarBoss
   - Bullet
+  - Door
+  - ChiaKhoa
+  - NPC
   layers:
   - Default
   - TransparentFX
@@ -23,8 +26,8 @@ TagManager:
   - 
   - Player
   - Boss
-  - 
-  - 
+  - Enemy
+  - NPC
   - 
   - 
   - 

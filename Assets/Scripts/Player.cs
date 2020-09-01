@@ -17,6 +17,7 @@ public class Player : MonoBehaviour
 
     public SpriteRenderer playerSprite;
     public float TimeTakeDamage = .4f;
+    public bool IsKey = false;
 
     bool isTakeDamage = false,isSpriteActive = true;
 
@@ -92,5 +93,30 @@ public class Player : MonoBehaviour
         isSpriteActive = true;
         playerSprite.color = Color.white;
         //playerSprite.enabled = true;
+    }
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Door"))
+        {
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                collision.SendMessageUpwards("DichChuyen");
+            }
+        }
+        if (collision.CompareTag("NPC"))
+        {
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                collision.SendMessageUpwards("DoiThoai");
+            }
+        }
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("ChiaKhoa"))
+        {
+            collision.SendMessageUpwards("ChiaKhoaOn");
+            IsKey = true;
+        }
     }
 }
