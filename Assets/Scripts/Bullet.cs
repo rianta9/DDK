@@ -29,6 +29,8 @@ public class Bullet : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D hitInfo)
 	{
+		if (hitInfo.isTrigger == true)
+			return;
 		if (hitInfo.CompareTag("Enemy") || hitInfo.CompareTag("Boss"))
 			hitInfo.SendMessageUpwards("TakeDamage",10);
 		if (hitInfo.CompareTag("Player"))

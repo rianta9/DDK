@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour
 {
@@ -8,6 +9,10 @@ public class Enemy : MonoBehaviour
 
     public int maxHealth = 100;
     public int currentHealth;
+
+    [Header("Enemy Chat")]
+    public Text TextDoiThoai;
+    public string NoiDungTanGau;
     // Start is called before the first frame update
     void Start()
     {
@@ -35,4 +40,21 @@ public class Enemy : MonoBehaviour
         ///GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
         this.enabled = false;
     }
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.collider.CompareTag("Player"))
+        {
+            TextDoiThoai.text = NoiDungTanGau;
+        }
+
+    }
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.collider.CompareTag("Player"))
+        {
+            TextDoiThoai.text = "";
+        }
+
+    }
+    
 }
