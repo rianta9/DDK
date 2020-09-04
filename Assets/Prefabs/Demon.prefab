@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 9054214726525747002}
   m_Layer: 0
   m_Name: Demon
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -225,6 +225,8 @@ MonoBehaviour:
   attackTime: 0
   isAttacking: 0
   anim: {fileID: 0}
+  audioSource: {fileID: 0}
+  music: {fileID: 0}
 --- !u!1 &9054214727580067275
 GameObject:
   m_ObjectHideFlags: 0
