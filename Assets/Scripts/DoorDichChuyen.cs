@@ -25,8 +25,13 @@ public class DoorDichChuyen : MonoBehaviour
     public Text TextGioiThieu;
     public string NoiDungClose,NoiDungOpen,defaul = "Không Có Chìa Khóa";
 
-    
 
+    [Header("sound")]
+    public AudioSource audiodoor;
+    public AudioClip DanhSach;
+
+    public SoundALL soundnext;
+    public int whatnumber;
 
     bool IsOpen = false;
     void Start()
@@ -45,7 +50,8 @@ public class DoorDichChuyen : MonoBehaviour
                 gameObject.GetComponent<Animator>().SetBool("Open", true);
                 IsOpen = true;
                 GoTeleport = false;
-                
+                audiodoor.clip = DanhSach;
+                audiodoor.Play();
 
             }
             else
@@ -64,6 +70,9 @@ public class DoorDichChuyen : MonoBehaviour
                 cam.maxpos = maxpos;
                 GoTeleport = false;
                 cam.transform.position = new Vector3(DiaDiemToi.position.x,DiaDiemToi.position.y,cam.transform.position.z);
+                soundnext.audioSource.Stop();
+                soundnext.PlaySound(whatnumber);
+               
             }
         }
     }
@@ -109,6 +118,8 @@ public class DoorDichChuyen : MonoBehaviour
         IsOpen = true;
         gameObject.GetComponent<Animator>().SetBool("Open", IsOpen);
         GoTeleport = false;
+        audiodoor.clip = DanhSach;
+        audiodoor.Play();
     }
     
     

@@ -27,7 +27,10 @@ public class BasicEnemyController : MonoBehaviour
     private float Left = 0, right = 0,CurrentPotion;
     private int AttackNotMove = 1;
     private bool CanChangeFlip = true;
+    bool isdie = false;
 
+    [Header("SoundEnemy")]
+    public SoundALL soundenemy;
     // Start is called before the first frame update
     void Start()
     {
@@ -82,8 +85,11 @@ public class BasicEnemyController : MonoBehaviour
 
     void Move()
     {
-        velocity_temp.Set(movementSpeed * ChieuMove * AttackNotMove,r2.velocity.y);
-        r2.velocity = velocity_temp;
+        if (!isdie)
+        {
+            velocity_temp.Set(movementSpeed * ChieuMove * AttackNotMove, r2.velocity.y);
+            r2.velocity = velocity_temp;
+        }
     }
 
     private void OnDrawGizmos()
@@ -93,7 +99,7 @@ public class BasicEnemyController : MonoBehaviour
     }
     public void Flip()
     {
-        if (CanChangeFlip)
+        if (CanChangeFlip && !isdie)
         {
             Enemy.Rotate(0, 180, 0);
             ChieuMove *= -1;
@@ -133,10 +139,11 @@ public class BasicEnemyController : MonoBehaviour
     }
     void Dead()
     {
-
+        isdie = true;
         animator.SetBool("Die",true);
         animator.SetBool("KockBack",false);
         animator.SetBool("Attack",false);
+        soundenemy.PlaySound(0, 0.35f);
     }
     void resetKockBack()
     {

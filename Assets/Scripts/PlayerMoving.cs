@@ -9,6 +9,7 @@ public class PlayerMoving : MonoBehaviour
     public Rigidbody2D rigidbody2;
     public Animator animator;
     public PlayerComBat comBat;
+    public Player playerbasic;
     [Range(0, .3f)] [SerializeField] private float m_MovementSmoothing = .05f;
 
     public float runspeed = 40f;
@@ -18,11 +19,13 @@ public class PlayerMoving : MonoBehaviour
     Vector2 m_velocity = Vector2.zero;
     float horizontalmove = 0f;
     bool Grounded = true, faceright = true;
+    public bool playerSoundjump = false;
 
     private void Start()
     {
         rigidbody2 = gameObject.GetComponent<Rigidbody2D>();
         animator = gameObject.GetComponent<Animator>();
+        playerbasic = gameObject.GetComponent<Player>();
     }
     void Update()
     {
@@ -34,6 +37,7 @@ public class PlayerMoving : MonoBehaviour
         {
             if(Grounded && !comBat.attacking)
             {
+                playerSoundjump = true;
                 Grounded = false;
                 rigidbody2.AddForce(new Vector2(0f, jumpForce));
                 comBat.GetComponent<PlayerComBat>().SkipSkill();
@@ -46,7 +50,7 @@ public class PlayerMoving : MonoBehaviour
     {
         
         horizontalmove = Input.GetAxisRaw("Horizontal");
-        if (!comBat.attacking)
+        if (!comBat.attacking && playerbasic.currentHealth > 0)
         {
             horizontalmove *= runspeed * Time.fixedDeltaTime * 10f;
         }

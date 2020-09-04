@@ -23,11 +23,13 @@ public class Boss : MonoBehaviour
     [Header("BossChat")]
     public Text BossText;
     public string NoiDungTranTroi;
+    [Header("soundBoss")]
+    public SoundALL soundBoss;
     // Start is called before the first frame update
     void Start()
     {
 
-
+        soundBoss.PlaySound(0,1f);
         currentHealth = MaxHealth;
         healthBar.setMaxHealth(MaxHealth);
        
@@ -49,7 +51,7 @@ public class Boss : MonoBehaviour
         StartCoroutine(XoaHealthBarBoss(2.2f));
         healthBar.enabled = false;
         BossText.text = NoiDungTranTroi;
-        
+        soundBoss.PlaySound(1, 0.8f);
     }
     void TakeDamage(int damage)
     {
