@@ -15,6 +15,7 @@ TagManager:
   - Door
   - ChiaKhoa
   - NPC
+  - Water
   layers:
   - Default
   - TransparentFX

@@ -10,11 +10,16 @@ public class Bullet : MonoBehaviour
 	public GameObject impactEffect;
 	public float timeDestroy = 0.5f;
 
+	[Header("Sound Bullet")]
+	public AudioSource audioBullet;
+	public AudioClip soundbullet;
 	// Use this for initialization
 	void Start()
 	{
 		rb.velocity = transform.right * speed;
 		timeDestroy += Time.time;
+		audioBullet.clip = soundbullet;
+		audioBullet.PlayOneShot(soundbullet,1f);
 
 	}
     private void Update()
@@ -33,7 +38,7 @@ public class Bullet : MonoBehaviour
 			return;
 		if (hitInfo.CompareTag("Enemy") || hitInfo.CompareTag("Boss"))
 			hitInfo.SendMessageUpwards("TakeDamage",10);
-		if (hitInfo.CompareTag("Player"))
+		if (hitInfo.CompareTag("Player") || hitInfo.CompareTag("NPC"))
         {
 
 			return;

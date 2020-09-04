@@ -24,7 +24,8 @@ public class PlayerComBat : MonoBehaviour
     public float MaxComboTime;
     public static int hitkick = 0;
 
-   
+    [Header("Sound Attakc")]
+    public bool soundAttack = false;
 
     // Update is called once per frame
     private void Awake()
@@ -71,6 +72,7 @@ public class PlayerComBat : MonoBehaviour
     }
     void Attack()
     {
+        soundAttack = true;
         if (player.get_faceright())
         {
             r2.AddForce(Vector2.right * 100f);
@@ -89,6 +91,7 @@ public class PlayerComBat : MonoBehaviour
     }
     void Attack2()
     {
+        soundAttack = true;
         if (player.get_faceright())
         {
             r2.AddForce(Vector2.right * 200f);
@@ -107,6 +110,7 @@ public class PlayerComBat : MonoBehaviour
     }
     void Attack3()
     {
+        soundAttack = true;
         if (player.get_faceright())
         {
             r2.AddForce(Vector2.right * 250f);

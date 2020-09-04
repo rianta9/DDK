@@ -21,6 +21,8 @@ public class Player : MonoBehaviour
 
     bool isTakeDamage = false,isSpriteActive = true;
 
+    [Header("SoundKey")]
+    public PlayerSoundControl playerSoundControl;
     void Start()
     {
         currentHealth = MaxHealth;
@@ -54,7 +56,7 @@ public class Player : MonoBehaviour
     public void Death()
     {
         //if (gameOverSound) audioSource.PlayOneShot(gameOverSound, 0.8f);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        StartCoroutine(WaitDie(3f));
     }
     void TakeDamage(int damage)
     {
@@ -94,6 +96,11 @@ public class Player : MonoBehaviour
         playerSprite.color = Color.white;
         //playerSprite.enabled = true;
     }
+    IEnumerator WaitDie(float time)
+    {
+        yield return new WaitForSeconds(time);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.CompareTag("Door"))
@@ -117,6 +124,7 @@ public class Player : MonoBehaviour
         {
             collision.SendMessageUpwards("ChiaKhoaOn");
             IsKey = true;
+            playerSoundControl.soundKey();
         }
     }
 }

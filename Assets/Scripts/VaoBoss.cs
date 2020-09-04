@@ -15,8 +15,11 @@ public class VaoBoss : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
-        ThungCan.SetActive(true);
-        BossIntro.SetActive(true);
-        Destroy(gameObject);
+        if (collision.CompareTag("Player"))
+        {
+            ThungCan.SetActive(true);
+            BossIntro.SetActive(true);
+            Destroy(gameObject);
+        }
     }
 }
