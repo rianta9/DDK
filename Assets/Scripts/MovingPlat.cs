@@ -25,10 +25,5 @@ public class MovingPlat : MonoBehaviour
         {
             changeDirection *= -1;
         }
-
-        //else if (another.gameObject.CompareTag("Player"))
-        //{
-        //    another.gameObject.transform.position = move;
-        //}
     }
 }
