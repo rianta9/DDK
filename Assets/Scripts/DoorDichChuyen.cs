@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class DoorDichChuyen : MonoBehaviour
@@ -8,6 +9,7 @@ public class DoorDichChuyen : MonoBehaviour
     [Header("DichChuyen")]
     public GameObject VatDichChuyen;
     public Transform DiaDiemToi;
+    public bool ChuyenScene = false;
     bool isPlayerOnDoor = false;
     bool GoTeleport = false;
     
@@ -34,10 +36,12 @@ public class DoorDichChuyen : MonoBehaviour
     public int whatnumber;
 
     bool IsOpen = false;
+    int leverload = 0;
+   
     void Start()
     {
-        
-            
+
+        leverload = SceneManager.sceneCount;
     }
 
     // Update is called once per frame
@@ -65,13 +69,21 @@ public class DoorDichChuyen : MonoBehaviour
         {
             if (GoTeleport)
             {
-                VatDichChuyen.transform.position = DiaDiemToi.position;
-                cam.minpos = minpos;
-                cam.maxpos = maxpos;
-                GoTeleport = false;
-                cam.transform.position = new Vector3(DiaDiemToi.position.x,DiaDiemToi.position.y,cam.transform.position.z);
-                soundnext.audioSource.Stop();
-                soundnext.PlaySound(whatnumber);
+                if (ChuyenScene)
+                {
+                    SceneManager.LoadScene("Map1");
+                    //SceneManager.LoadScene(leverload + 1);
+                }
+                else
+                {
+                    VatDichChuyen.transform.position = DiaDiemToi.position;
+                    cam.minpos = minpos;
+                    cam.maxpos = maxpos;
+                    GoTeleport = false;
+                    cam.transform.position = new Vector3(DiaDiemToi.position.x, DiaDiemToi.position.y, cam.transform.position.z);
+                    soundnext.audioSource.Stop();
+                    soundnext.PlaySound(whatnumber);
+                }
                
             }
         }
