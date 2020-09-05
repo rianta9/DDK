@@ -23,7 +23,7 @@ public class PlayerShoot : MonoBehaviour
 	{
         if(Time.time >= TimeShootDelay)
         {
-			if (Input.GetKeyDown(KeyCode.C) && !playerComBat.attacking && playerBasic.currentHealth > 0)
+			if (Input.GetKeyDown(KeyCode.C) && !playerComBat.attacking && playerBasic.currentHealth > 0 && !PauseMenu.GameIsPaused)
 			{
 				Shoot();
 				TimeShootDelay = Time.time + nextTimeShoot;

@@ -27,16 +27,17 @@ public class PlayerComBat : MonoBehaviour
     [Header("Sound Attakc")]
     public bool soundAttack = false;
 
+    public PauseMenu pause;
     // Update is called once per frame
     private void Awake()
     {
-
+        
         player = gameObject.GetComponent<PlayerMoving>();
         r2 = gameObject.GetComponent<Rigidbody2D>();
     }
     void Update()
     {
-        
+
 
         if (Time.time - lastClickedTime > MaxComboTime)
         {
@@ -45,7 +46,7 @@ public class PlayerComBat : MonoBehaviour
         }
         if(hitkick < 4)
         {
-            if (Input.GetKeyDown(KeyCode.Z) && player.isGrounded())
+            if (Input.GetKeyDown(KeyCode.Z) && player.isGrounded() && PauseMenu.GameIsPaused == false)
             {
                 lastClickedTime = Time.time;
                 hitkick++;

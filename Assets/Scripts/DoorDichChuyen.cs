@@ -71,7 +71,7 @@ public class DoorDichChuyen : MonoBehaviour
             {
                 if (ChuyenScene)
                 {
-                    SceneManager.LoadScene("Map1");
+                    SceneManager.LoadScene("Map3");
                     //SceneManager.LoadScene(leverload + 1);
                 }
                 else
