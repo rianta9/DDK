@@ -42,7 +42,14 @@ public class SoundALL : MonoBehaviour
                 i++;
             }
         }
-        
+        if (PauseMenu.GameIsPaused)
+        {
+            audioSource.volume = 0.4f;
+        }
+        else
+        {
+            audioSource.volume = 0.8f;
+        }
     }
     public void PlaySound(int clip,float amluong = 0.8f)
     {

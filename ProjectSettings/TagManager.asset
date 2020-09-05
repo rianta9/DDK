@@ -16,6 +16,7 @@ TagManager:
   - ChiaKhoa
   - NPC
   - Water
+  - PauseUI
   layers:
   - Default
   - TransparentFX
