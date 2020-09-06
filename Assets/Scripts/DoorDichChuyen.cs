@@ -37,7 +37,12 @@ public class DoorDichChuyen : MonoBehaviour
 
     bool IsOpen = false;
     int leverload = 0;
-   
+    [Header("LoadLevel")]
+    public Animator animatorLoadlevel;
+    public float TimeLoadlevel = 1;
+    [Header("LoadLevel%")]
+    public LevelLoad levelLoad;
+    public int sceneLevelLoad;
     void Start()
     {
 
@@ -71,7 +76,9 @@ public class DoorDichChuyen : MonoBehaviour
             {
                 if (ChuyenScene)
                 {
-                    SceneManager.LoadScene("Map3");
+                    levelLoad.LoadLevel(sceneLevelLoad);
+                    //StartCoroutine(Loadlevel(1));
+
                     //SceneManager.LoadScene(leverload + 1);
                 }
                 else
@@ -133,7 +140,12 @@ public class DoorDichChuyen : MonoBehaviour
         audiodoor.clip = DanhSach;
         audiodoor.Play();
     }
-    
+    IEnumerator Loadlevel(int levelload)
+    {
+        animatorLoadlevel.SetTrigger("Start");
+        yield return new WaitForSeconds(TimeLoadlevel);
+        SceneManager.LoadScene("Map3");
+    }
     
     
 }
