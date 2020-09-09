@@ -9,8 +9,8 @@ public class MainMenu : MonoBehaviour
     public float TimeLoad = 1f;
    public void PlayGame()
     {
-        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        StartCoroutine(LoadNext(0));
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        //StartCoroutine(LoadNext(0));
     }
     public void QuitGame()
     {
