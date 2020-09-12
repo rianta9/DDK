@@ -2415,16 +2415,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4880844940836922305, guid: e740eb714db13f3469d6cc7d6cbae363,
-        type: 3}
-      propertyPath: pause
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4880844940836922306, guid: e740eb714db13f3469d6cc7d6cbae363,
-        type: 3}
-      propertyPath: playerBasic
-      value: 
-      objectReference: {fileID: 1112259503}
     - target: {fileID: 4880844940836922309, guid: e740eb714db13f3469d6cc7d6cbae363,
         type: 3}
       propertyPath: healthBar
