@@ -56,7 +56,8 @@ public class Player : MonoBehaviour
     public void Death()
     {
         //if (gameOverSound) audioSource.PlayOneShot(gameOverSound, 0.8f);
-        StartCoroutine(WaitDie(3f));
+        GetComponent<Animator>().SetBool("IsDie", true);
+        StartCoroutine(WaitDie(1.5f));
     }
     void TakeDamage(int damage)
     {

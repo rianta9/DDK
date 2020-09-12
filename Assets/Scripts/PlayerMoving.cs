@@ -33,7 +33,7 @@ public class PlayerMoving : MonoBehaviour
         animator.SetFloat("Speed",Mathf.Abs(horizontalmove));
 
         
-        if (Input.GetButtonDown("Jump"))//jump button
+        if (Input.GetButtonDown("Jump") && playerbasic.currentHealth > 0)//jump button
         {
             if(Grounded && !comBat.attacking)
             {

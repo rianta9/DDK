@@ -110,7 +110,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: 21300076, guid: 98379bc4eb0652143836af9287d46706, type: 3}
+  m_Sprite: {fileID: 21300076, guid: c562037973e021f44a4bfd1e9493c9c6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -165,6 +165,8 @@ MonoBehaviour:
   attacking: 0
   lastClickedTime: 0
   MaxComboTime: 1
+  soundAttack: 0
+  pause: {fileID: 0}
 --- !u!114 &4880844940836922318
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -180,9 +182,11 @@ MonoBehaviour:
   rigidbody2: {fileID: 4880844940836922307}
   animator: {fileID: 4880844940836922304}
   comBat: {fileID: 4880844940836922305}
+  playerbasic: {fileID: 0}
   m_MovementSmoothing: 0.05
   runspeed: 40
   jumpForce: 700
+  playerSoundjump: 0
 --- !u!50 &4880844940836922307
 Rigidbody2D:
   serializedVersion: 4
@@ -220,7 +224,7 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0.14071238}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.64522654, y: 0.407}
     oldSize: {x: 0.71875, y: 0.84375}
     newSize: {x: 0.71875, y: 0.84375}
     adaptiveTilingThreshold: 0.5
@@ -267,6 +271,7 @@ MonoBehaviour:
   playerSprite: {fileID: 4880844940836922329}
   TimeTakeDamage: 0.4
   IsKey: 0
+  playerSoundControl: {fileID: 0}
 --- !u!114 &4880844940836922306
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -285,6 +290,7 @@ MonoBehaviour:
   nextTimeShoot: 0.25
   animator: {fileID: 4880844940836922304}
   playerComBat: {fileID: 4880844940836922305}
+  playerBasic: {fileID: 0}
 --- !u!1 &4880844940943978361
 GameObject:
   m_ObjectHideFlags: 0
