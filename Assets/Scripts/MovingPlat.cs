@@ -4,29 +4,26 @@ using UnityEngine;
 
 public class MovingPlat : MonoBehaviour
 {
-
-    public float speed =- 0.05f, changeDirection = -1;
-    Vector3 Move;
-
-    // Use this for initialization
+    public float speed = 0.05f, changeDirection = -1;
+    Vector3 move;
+    
     void Start()
     {
-        Move = this.transform.position;
+        move = transform.position;
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        Move.x += speed;
-        this.transform.position = Move; 
-
+        move.x += speed * changeDirection;
+        transform.position = move;
     }
 
-    private void OnCollisionEnter2D(Collision2D col)
-    {
-        if (col.collider.CompareTag("Ground"))
+    private void OnCollisionEnter2D(Collision2D another)
+    { // nếu chạm vào một colider có tag là Ground1 thì quay đầu
+        if (another.gameObject.CompareTag("Ground"))
         {
-            speed *= changeDirection;
+            changeDirection *= -1;
         }
     }
 }
