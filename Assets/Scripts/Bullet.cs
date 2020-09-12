@@ -34,15 +34,16 @@ public class Bullet : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D hitInfo)
 	{
-		if (hitInfo.isTrigger == true)
-			return;
 		if (hitInfo.CompareTag("Enemy") || hitInfo.CompareTag("Boss"))
-			hitInfo.SendMessageUpwards("TakeDamage",10);
-		if (hitInfo.CompareTag("Player") || hitInfo.CompareTag("NPC"))
-        {
+			hitInfo.SendMessageUpwards("TakeDamage", 10);
+		else if (hitInfo.CompareTag("ThanhGo")) ;
+		else return;
+		
+		//if (hitInfo.CompareTag("Player") || hitInfo.CompareTag("NPC"))
+  //      {
 
-			return;
-		}
+		//	return;
+		//}
 	
 		Instantiate(impactEffect, transform.position, transform.rotation);
 		Destroy(gameObject);

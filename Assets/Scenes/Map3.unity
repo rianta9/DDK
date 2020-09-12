@@ -11844,6 +11844,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tuong (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1314917335859183548, guid: d1402f145a57fd24583db064156fa99d,
+        type: 3}
+      propertyPath: m_TagString
+      value: ThanhGo
+      objectReference: {fileID: 0}
     - target: {fileID: 1314917335859183549, guid: d1402f145a57fd24583db064156fa99d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -19486,10 +19491,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1620723528}
     m_Modifications:
+    - target: {fileID: 1314917335859183547, guid: d1402f145a57fd24583db064156fa99d,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 0.044895172
+      objectReference: {fileID: 0}
+    - target: {fileID: 1314917335859183547, guid: d1402f145a57fd24583db064156fa99d,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.91020966
+      objectReference: {fileID: 0}
     - target: {fileID: 1314917335859183548, guid: d1402f145a57fd24583db064156fa99d,
         type: 3}
       propertyPath: m_Name
       value: Tuong
+      objectReference: {fileID: 0}
+    - target: {fileID: 1314917335859183548, guid: d1402f145a57fd24583db064156fa99d,
+        type: 3}
+      propertyPath: m_TagString
+      value: ThanhGo
       objectReference: {fileID: 0}
     - target: {fileID: 1314917335859183549, guid: d1402f145a57fd24583db064156fa99d,
         type: 3}
