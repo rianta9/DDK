@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 9054214726525746998}
   - component: {fileID: 9054214726525747003}
   - component: {fileID: 9054214726525747002}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Demon
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -159,7 +159,7 @@ GameObject:
   - component: {fileID: 9054214727550418347}
   - component: {fileID: 9054214727550418346}
   - component: {fileID: 9054214727550418345}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: AttackArea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -238,7 +238,7 @@ GameObject:
   - component: {fileID: 9054214727580067274}
   - component: {fileID: 9054214727580067273}
   - component: {fileID: 9054214727580067272}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: DemonArea
   m_TagString: Untagged
   m_Icon: {fileID: 0}

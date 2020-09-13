@@ -14,7 +14,9 @@ public class PlayerSoundControl : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Hp = GetComponentInParent<Player>();
+        isJump = GetComponentInParent<PlayerMoving>();
+        isAtk = GetComponentInParent<PlayerComBat>();
     }
 
     // Update is called once per frame
