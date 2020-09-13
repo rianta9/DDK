@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 492595622}
   - component: {fileID: 556083573}
   - component: {fileID: 1833494229}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: AttackArea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -190,7 +190,7 @@ GameObject:
   - component: {fileID: 7194907007373257286}
   - component: {fileID: 7194907007373257285}
   - component: {fileID: 8989220734615110289}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Monster
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -359,7 +359,7 @@ GameObject:
   - component: {fileID: 1294860746616810980}
   - component: {fileID: 2091497321927075351}
   - component: {fileID: 7664440356769240230}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: DemonArea
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 774724991891880340}
   - component: {fileID: 774724991891880363}
   - component: {fileID: 774724991891880360}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Ghost
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -160,7 +160,7 @@ GameObject:
   - component: {fileID: 774724992197172980}
   - component: {fileID: 774724992197172981}
   - component: {fileID: 1465473321}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: AttackArea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -335,7 +335,7 @@ GameObject:
   - component: {fileID: 774724992537493439}
   - component: {fileID: 774724992537493436}
   - component: {fileID: 774724992537493437}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GhostArea
   m_TagString: Untagged
   m_Icon: {fileID: 0}

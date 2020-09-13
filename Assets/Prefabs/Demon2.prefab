@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7350214218076458193}
   - component: {fileID: 7350214218076458192}
   - component: {fileID: 7350214218076458188}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Demon2
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -161,7 +161,7 @@ GameObject:
   - component: {fileID: 7350214218105320264}
   - component: {fileID: 7350214218105320265}
   - component: {fileID: 7350214218105320262}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: DemonArea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -233,7 +233,7 @@ GameObject:
   - component: {fileID: 7350214218542206266}
   - component: {fileID: 7350214218542206267}
   - component: {fileID: 1765090004}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: AttackArea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -300,7 +300,7 @@ MonoBehaviour:
   isAttacking: 0
   anim: {fileID: 0}
   audioSource: {fileID: 0}
-  music: {fileID: 8300000, guid: c13f68820be50be448adb72bd605a1ca, type: 3}
+  music: {fileID: 8300000, guid: d9c6c07617f836a4d8af8e23b47c8e4a, type: 3}
 --- !u!82 &1765090004
 AudioSource:
   m_ObjectHideFlags: 0
