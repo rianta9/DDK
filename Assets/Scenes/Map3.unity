@@ -19796,6 +19796,11 @@ PrefabInstance:
       propertyPath: isAtk
       value: 
       objectReference: {fileID: 905618633}
+    - target: {fileID: 4880844940836922307, guid: e740eb714db13f3469d6cc7d6cbae363,
+        type: 3}
+      propertyPath: m_Simulated
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4880844940836922309, guid: e740eb714db13f3469d6cc7d6cbae363,
         type: 3}
       propertyPath: healthBar
@@ -19859,6 +19864,11 @@ PrefabInstance:
     - target: {fileID: 4880844940836922310, guid: e740eb714db13f3469d6cc7d6cbae363,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4880844940836922311, guid: e740eb714db13f3469d6cc7d6cbae363,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.drawMode
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4880844940836922319, guid: e740eb714db13f3469d6cc7d6cbae363,
@@ -20012,6 +20022,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 234407259}
+    - target: {fileID: 5181784459551114769, guid: a1658a718318ac34ea0b61860f1e8898,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: QuitGame
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1658a718318ac34ea0b61860f1e8898, type: 3}
 --- !u!1001 &6563329687554927281

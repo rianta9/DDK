@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class CameraFlow : MonoBehaviour
 {
+    [Header("Toc Do Camera Flow")]
     [Range(0, 0.3f)] [SerializeField] private float smoothtimeX = .03f;
     [Range(0, 0.3f)] [SerializeField] private float smoothtimeY = .03f;
-
     //public GameObject player;
     public Vector2 minpos, maxpos;
     public bool bound;
