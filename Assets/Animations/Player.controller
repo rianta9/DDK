@@ -14,37 +14,37 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Grounded
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Atk1
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Atk2
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Atk3
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: IsDie
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -741,13 +741,13 @@ AnimatorStateMachine:
     m_Position: {x: -84, y: 96, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102038228178381802}
-    m_Position: {x: 0, y: 360, z: 0}
+    m_Position: {x: 36, y: 324, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102822644143657258}
-    m_Position: {x: 276, y: 360, z: 0}
+    m_Position: {x: 264, y: 324, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102359444071710852}
-    m_Position: {x: 564, y: 360, z: 0}
+    m_Position: {x: 492, y: 324, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102409949768416600}
     m_Position: {x: -180, y: 300, z: 0}
