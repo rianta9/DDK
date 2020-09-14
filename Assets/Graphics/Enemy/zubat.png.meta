@@ -1,7 +1,128 @@
 fileFormatVersion: 2
 guid: e50f1dc69282a4c40b87528fc31138f1
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: zubat_0
+    21300002: zubat_1
+    21300004: zubat_2
+    21300006: zubat_3
+    21300008: zubat_4
+    21300010: zubat_5
+    21300012: zubat_6
+    21300014: zubat_7
+    21300016: zubat_8
+    21300018: zubat_9
+    21300020: zubat_10
+    21300022: zubat_11
+    21300024: zubat_12
+    21300026: zubat_13
+    21300028: zubat_14
+    21300030: zubat_15
+    21300032: zubat_16
+    21300034: zubat_17
+    21300036: zubat_18
+    21300038: zubat_19
+    21300040: zubat_20
+    21300042: zubat_21
+    21300044: zubat_22
+    21300046: zubat_23
+    21300048: zubat_24
+    21300050: zubat_25
+    21300052: zubat_26
+    21300054: zubat_27
+    21300056: zubat_28
+    21300058: zubat_29
+    21300060: zubat_30
+    21300062: zubat_31
+    21300064: zubat_32
+    21300066: zubat_33
+    21300068: zubat_34
+    21300070: zubat_35
+    21300072: zubat_36
+    21300074: zubat_37
+    21300076: zubat_38
+    21300078: zubat_39
+    21300080: zubat_40
+    21300082: zubat_41
+    21300084: zubat_42
+    21300086: zubat_43
+    21300088: zubat_44
+    21300090: zubat_45
+    21300092: zubat_46
+    21300094: zubat_47
+    21300096: zubat_48
+    21300098: zubat_49
+    21300100: zubat_50
+    21300102: zubat_51
+    21300104: zubat_52
+    21300106: zubat_53
+    21300108: zubat_54
+    21300110: zubat_55
+    21300112: zubat_56
+    21300114: zubat_57
+    21300116: zubat_58
+    21300118: zubat_59
+    21300120: zubat_60
+    21300122: zubat_61
+    21300124: zubat_62
+    21300126: zubat_63
+    21300128: zubat_64
+    21300130: zubat_65
+    21300132: zubat_66
+    21300134: zubat_67
+    21300136: zubat_68
+    21300138: zubat_69
+    21300140: zubat_70
+    21300142: zubat_71
+    21300144: zubat_72
+    21300146: zubat_73
+    21300148: zubat_74
+    21300150: zubat_75
+    21300152: zubat_76
+    21300154: zubat_77
+    21300156: zubat_78
+    21300158: zubat_79
+    21300160: zubat_80
+    21300162: zubat_81
+    21300164: zubat_82
+    21300166: zubat_83
+    21300168: zubat_84
+    21300170: zubat_85
+    21300172: zubat_86
+    21300174: zubat_87
+    21300176: zubat_88
+    21300178: zubat_89
+    21300180: zubat_90
+    21300182: zubat_91
+    21300184: zubat_92
+    21300186: zubat_93
+    21300188: zubat_94
+    21300190: zubat_95
+    21300192: zubat_96
+    21300194: zubat_97
+    21300196: zubat_98
+    21300198: zubat_99
+    21300200: zubat_100
+    21300202: zubat_101
+    21300204: zubat_102
+    21300206: zubat_103
+    21300208: zubat_104
+    21300210: zubat_105
+    21300212: zubat_106
+    21300214: zubat_107
+    21300216: zubat_108
+    21300218: zubat_109
+    21300220: zubat_110
+    21300222: zubat_111
+    21300224: zubat_112
+    21300226: zubat_113
+    21300228: zubat_114
+    21300230: zubat_115
+    21300232: zubat_116
+    21300234: zubat_117
+    21300236: zubat_118
+    21300238: zubat_119
+    21300240: zubat_120
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -31,7 +152,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -40,12 +161,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -71,7 +192,1947 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: zubat_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 335
+        width: 46
+        height: 41
+      alignment: 9
+      pivot: {x: 0.48652488, y: 0.3639348}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b96e9cb2eb98ac24f8625a223b0c2032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_1
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 335
+        width: 48
+        height: 30
+      alignment: 9
+      pivot: {x: 0.5, y: 0.58264464}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9612bb9fd5d0d72448b2c8137ccf68f2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_2
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 328
+        width: 39
+        height: 39
+      alignment: 9
+      pivot: {x: 0.5158932, y: 0.6907216}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11665738ecfcd8745978f8b77c3cc327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_3
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 336
+        width: 51
+        height: 40
+      alignment: 9
+      pivot: {x: 0.52430755, y: 0.29854813}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4cc6c945eb8a884d8b6f322712abc2b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_4
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 329
+        width: 49
+        height: 39
+      alignment: 9
+      pivot: {x: 0.4999997, y: 0.579467}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccdfc6f0575492b46bec191eebc7cb10
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_5
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 329
+        width: 40
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.63946533}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4369e851738b6a4b90206111430fc0c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_6
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 336
+        width: 48
+        height: 40
+      alignment: 9
+      pivot: {x: 0.52582675, y: 0.29854736}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d93da2e5efdb604dabf544fb816a7eb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_7
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 335
+        width: 50
+        height: 33
+      alignment: 9
+      pivot: {x: 0.47520506, y: 0.46243194}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fadd15cf274f9ea4f80da058b14ee818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_8
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 330
+        width: 41
+        height: 37
+      alignment: 9
+      pivot: {x: 0.491269, y: 0.6632259}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a488f33671287c489dbb1a3e64b536e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_9
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 336
+        width: 47
+        height: 40
+      alignment: 9
+      pivot: {x: 0.49999934, y: 0.29854813}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9139952b94613c47999eb5c9b9b2e45
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_10
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 328
+        width: 49
+        height: 39
+      alignment: 9
+      pivot: {x: 0.49999937, y: 0.5953604}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5171dfbfb26b5e143b028cedbe9e4a4d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_11
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 288
+        width: 40
+        height: 41
+      alignment: 9
+      pivot: {x: 0.36053404, y: 0.32361808}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 394be9a6c6ad62c4ba6b75af89e3a71f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_13
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 288
+        width: 39
+        height: 41
+      alignment: 9
+      pivot: {x: 0.35695747, y: 0.31686124}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e64c75b7d3bd764b9134677e9eaa108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_14
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 288
+        width: 39
+        height: 41
+      alignment: 9
+      pivot: {x: 0.35695708, y: 0.33301005}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b619886a52f1314c910bcd9992489ee
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_17
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 287
+        width: 49
+        height: 42
+      alignment: 9
+      pivot: {x: 0.46204984, y: 0.32289997}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e56368ecbb36e3f468d8341f463cf2c0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_19
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 290
+        width: 35
+        height: 33
+      alignment: 9
+      pivot: {x: 0.41144997, y: 0.42486295}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb999b70eac5986439b3f4d4278dad22
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_20
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 282
+        width: 37
+        height: 37
+      alignment: 9
+      pivot: {x: 0.34922564, y: 0.667525}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1cdd10dabeb7f245843cd47ad7422d0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_21
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 291
+        width: 35
+        height: 32
+      alignment: 9
+      pivot: {x: 0.39373955, y: 0.40314674}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2974f54a29574046bb2348badc222ed
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_22
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 282
+        width: 37
+        height: 38
+      alignment: 9
+      pivot: {x: 0.349225, y: 0.63049316}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8ad89386b98fe84b9bf08b0b53c4ec5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_23
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 290
+        width: 35
+        height: 33
+      alignment: 9
+      pivot: {x: 0.42915997, y: 0.42486572}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45d6d255771b71a40a45424ec80e0e8d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_24
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 282
+        width: 37
+        height: 37
+      alignment: 9
+      pivot: {x: 0.38273084, y: 0.65077335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62a62bbc9f27d834b859bbabb32cd92c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_25
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 291
+        width: 38
+        height: 34
+      alignment: 9
+      pivot: {x: 0.41844016, y: 0.354152}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17faeb0499735fd49a7858dccb11f346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_26
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 280
+        width: 39
+        height: 40
+      alignment: 9
+      pivot: {x: 0.37285125, y: 0.62396926}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a34f438e9446ffe459db85a13d806766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 240
+        width: 40
+        height: 42
+      alignment: 9
+      pivot: {x: 0.6549622, y: 0.32093132}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7253984adf0e05343bd52e39e087b808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_28
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 242
+        width: 35
+        height: 35
+      alignment: 9
+      pivot: {x: 0.5708396, y: 0.40897653}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6248e7567dcb82744b2d095bdb8cd13a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_29
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 241
+        width: 40
+        height: 44
+      alignment: 9
+      pivot: {x: 0.63946533, y: 0.28868762}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae438e5f7b5c7d6429fafb8a2ec77551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_30
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 235
+        width: 35
+        height: 50
+      alignment: 9
+      pivot: {x: 0.64167875, y: 0.42561767}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd8156eaf898fcb4eaa4aeaaa2f1a58e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_31
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 241
+        width: 39
+        height: 41
+      alignment: 9
+      pivot: {x: 0.64304215, y: 0.31768575}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82a93d0608624a149b934c835c89a1e5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_32
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 242
+        width: 36
+        height: 35
+      alignment: 9
+      pivot: {x: 0.6451213, y: 0.4181283}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea71d82b9d0f14d4d92e51ffddf40d4e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_34
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 235
+        width: 37
+        height: 37
+      alignment: 9
+      pivot: {x: 0.6675264, y: 0.6507717}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b41f195cd585d24a98b58ac8abf6555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_35
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 235
+        width: 39
+        height: 37
+      alignment: 9
+      pivot: {x: 0.6430414, y: 0.65077335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3e82d4410886ba419a17a97b7062b6f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_36
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 234
+        width: 37
+        height: 38
+      alignment: 9
+      pivot: {x: 0.6507725, y: 0.6141815}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07f1abde53ca3f744bb5fbdc5fe324a6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_37
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 240
+        width: 35
+        height: 36
+      alignment: 9
+      pivot: {x: 0.64167917, y: 0.44834477}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7219c3cf37fb63c42bf9f891e831081d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_38
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 236
+        width: 38
+        height: 35
+      alignment: 9
+      pivot: {x: 0.61417913, y: 0.65099925}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03097e4b77876ea46b28c7d73ea128fb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_44
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 195
+        width: 47
+        height: 41
+      alignment: 9
+      pivot: {x: 0.51318747, y: 0.31858045}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2a291da38484ba42b68ebb9f87024bd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_47
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 195
+        width: 46
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5134748, y: 0.36053354}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a10455d3ec2119468359c34766323fb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_48
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 198
+        width: 46
+        height: 26
+      alignment: 9
+      pivot: {x: 0.486525, y: 0.52383953}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f17d023fc17a92f45b44c3f9abe52f00
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_49
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 192
+        width: 36
+        height: 34
+      alignment: 9
+      pivot: {x: 0.48278174, y: 0.664076}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c9b9cec7367bf742a8deed26df21421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_50
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 195
+        width: 46
+        height: 39
+      alignment: 9
+      pivot: {x: 0.48652482, y: 0.34106368}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8591fa202fa39aa4486d865c174a9668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_51
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 198
+        width: 46
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d0e1a598e459d54681fe62ad8a8970c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_52
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 191
+        width: 34
+        height: 34
+      alignment: 9
+      pivot: {x: 0.5182307, y: 0.6276151}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce3ab577705baea4597cfddb78ee1fd9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_53
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 195
+        width: 47
+        height: 40
+      alignment: 9
+      pivot: {x: 0.51318747, y: 0.31404495}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd223d02b2d05544a9c796c28da8e41a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_54
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 198
+        width: 46
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38c556e08afc5ed4e9753b0eb227ae4d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_55
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 193
+        width: 34
+        height: 33
+      alignment: 9
+      pivot: {x: 0.5182307, y: 0.5751324}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e26e01d0a2498742bf59927523d908c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_56
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 198
+        width: 47
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eb1132448213ca46932ca1899a49a00
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_57
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 192
+        width: 35
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab585386719f4f74f8c31c22d5d2e231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_58
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 148
+        width: 46
+        height: 43
+      alignment: 9
+      pivot: {x: 0.49999997, y: 0.3052354}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6341ca3a0d3e9b48ae3ff1fe8cbe603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_59
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 187
+        width: 14
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be0808022d17d7348a8fe034ece835f7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_60
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 141
+        width: 40
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5373882, y: 0.5000006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6f36eaf64555c14fbff3f71056f929b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_61
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 148
+        width: 47
+        height: 43
+      alignment: 9
+      pivot: {x: 0.48956493, y: 0.2832858}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd01e900b8fb8e74abf1c0c6769ba834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_62
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 141
+        width: 49
+        height: 50
+      alignment: 9
+      pivot: {x: 0.4799811, y: 0.44114503}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7716042a0ae98994a90b76d11677610f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_63
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 141
+        width: 39
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20d57c4f386b4624093e9c8974770983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_64
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 148
+        width: 48
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38bb875c8c7449b4db8304ec3a6d56a6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_67
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 148
+        width: 47
+        height: 43
+      alignment: 9
+      pivot: {x: 0.5137699, y: 0.29682603}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 070f5739092025d41bf47bb7a9bc3064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_69
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 141
+        width: 48
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2d575efecb15314f8b7a912bbb00c87
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_70
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 148
+        width: 48
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81978f5fb1e5538439056779fb1f5e96
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_71
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 142
+        width: 40
+        height: 43
+      alignment: 9
+      pivot: {x: 0.49191132, y: 0.5677249}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f660e830345d8d84f9728698b8d1a32d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_72
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 141
+        width: 50
+        height: 41
+      alignment: 9
+      pivot: {x: 0.48058593, y: 0.5552446}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63489ba82ca65cc4f8e3538d9e301b64
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_73
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 141
+        width: 39
+        height: 43
+      alignment: 9
+      pivot: {x: 0.5082976, y: 0.57524997}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a19f03406c7ad14d94e7e57899fad82
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_74
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 100
+        width: 39
+        height: 44
+      alignment: 9
+      pivot: {x: 0.3177616, y: 0.30616415}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c7bb46b6812392429147d148539961d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_75
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 100
+        width: 40
+        height: 44
+      alignment: 9
+      pivot: {x: 0.3773857, y: 0.299358}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1be3779d9abb2ea43b87621ce4d1123f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_76
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 100
+        width: 41
+        height: 41
+      alignment: 9
+      pivot: {x: 0.38332683, y: 0.29615384}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e6c836be8ad7ae40b52daa4b4f3f502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_79
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 99
+        width: 39
+        height: 42
+      alignment: 9
+      pivot: {x: 0.35780296, y: 0.33023036}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfd0a8b854dfb904c97f1b60ea250b5a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_80
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 103
+        width: 35
+        height: 34
+      alignment: 9
+      pivot: {x: 0.34832153, y: 0.37508863}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12e91496daee1c04289ef9387f72946b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_81
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 94
+        width: 38
+        height: 45
+      alignment: 9
+      pivot: {x: 0.388237, y: 0.5294932}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5abb2b27764c5914b9abd6fa0813ec42
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_82
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 103
+        width: 36
+        height: 34
+      alignment: 9
+      pivot: {x: 0.39100987, y: 0.37017283}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40e488df825fb2044bd5146dc34a4dac
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_83
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 94
+        width: 37
+        height: 45
+      alignment: 9
+      pivot: {x: 0.35418865, y: 0.5000002}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5655927ba783d794381e494679684dd7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_84
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 103
+        width: 35
+        height: 32
+      alignment: 9
+      pivot: {x: 0.39179948, y: 0.38788462}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c143b152c6877e4491bde5f45037a98
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_85
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 94
+        width: 37
+        height: 42
+      alignment: 9
+      pivot: {x: 0.35993916, y: 0.57118404}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fde921c4828dcbe4190e6748bc32cd86
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_86
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 103
+        width: 35
+        height: 33
+      alignment: 9
+      pivot: {x: 0.39747664, y: 0.4011464}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25357986defe6fb4eb7e299b141a9468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_87
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 94
+        width: 37
+        height: 42
+      alignment: 9
+      pivot: {x: 0.35893455, y: 0.5621362}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e35774e0dd04bf24093c97bf68d93fc1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_88
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 52
+        width: 39
+        height: 42
+      alignment: 9
+      pivot: {x: 0.66211075, y: 0.31385368}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 897a695563705174197b9f0176ec75a8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_89
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 56
+        width: 36
+        height: 36
+      alignment: 9
+      pivot: {x: 0.654839, y: 0.34264416}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05d40ced9f92e0d40b9045f8ed91746b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_90
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 49
+        width: 38
+        height: 43
+      alignment: 9
+      pivot: {x: 0.6676449, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c579d6eace2d08349be43cc0d390935e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_91
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 51
+        width: 40
+        height: 46
+      alignment: 9
+      pivot: {x: 0.63487625, y: 0.31874382}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4adba3632a169a4a801e3a93daea42f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_92
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 56
+        width: 35
+        height: 41
+      alignment: 9
+      pivot: {x: 0.6261178, y: 0.32056445}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 917bcb1bca240334da92d72560ca6572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_93
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 48
+        width: 38
+        height: 44
+      alignment: 9
+      pivot: {x: 0.62906766, y: 0.5000002}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ea5eb1c142bc87469764d45b42b4eac
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_94
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 51
+        width: 39
+        height: 48
+      alignment: 9
+      pivot: {x: 0.6686519, y: 0.32975054}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5599d1d474d34d14f85290a117ed9ae6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_95
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 56
+        width: 35
+        height: 41
+      alignment: 9
+      pivot: {x: 0.6366734, y: 0.33471364}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cacb5bba7db7de4fbc00c8967496a05
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_96
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 47
+        width: 37
+        height: 42
+      alignment: 9
+      pivot: {x: 0.6777682, y: 0.5806754}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f792a2fa2cc4c7d4d83d55781ba56261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_97
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 52
+        width: 39
+        height: 45
+      alignment: 9
+      pivot: {x: 0.6589261, y: 0.31876883}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ebb6b051e22c8d478e11d9a214d4459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_98
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 56
+        width: 40
+        height: 41
+      alignment: 9
+      pivot: {x: 0.5978653, y: 0.31700078}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15a4abb81bb62394092d9a09f0e8a9bb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_99
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 46
+        width: 37
+        height: 42
+      alignment: 9
+      pivot: {x: 0.6410671, y: 0.56213635}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 715f8275747528f409f5f20e2633e0ae
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_100
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2
+        width: 46
+        height: 45
+      alignment: 9
+      pivot: {x: 0.49370587, y: 0.3906223}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d900d5144f8c46b449e31a9be489ed8e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_102
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 10
+        width: 46
+        height: 34
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.3695123}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 204bf4b184369f240989769a47d13c66
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_103
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 2
+        width: 46
+        height: 48
+      alignment: 9
+      pivot: {x: 0.51066226, y: 0.3773857}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 489ceba4192796c4b9277a7a31892ff4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_105
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 1
+        width: 46
+        height: 46
+      alignment: 9
+      pivot: {x: 0.5129985, y: 0.3983079}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bc920022e5315e4ea7fe78f6325c123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_109
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 0
+        width: 46
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8acb71f04f433a4789d7ca195815348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_110
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 10
+        width: 46
+        height: 34
+      alignment: 9
+      pivot: {x: 0.53033113, y: 0.37103054}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b82a9cf5c99d7a74db1cb5d5db7f9340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_111
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 4
+        width: 34
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5117241, y: 0.5548121}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8e77be550988f245a29a2ae39a2678f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_112
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 6
+        width: 48
+        height: 40
+      alignment: 9
+      pivot: {x: 0.48754182, y: 0.37431994}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7749ad8260f2054193f7c045c6eaaf8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_113
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 10
+        width: 46
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5129985, y: 0.4003421}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af5d5f1511b29234ca6445a929711322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_114
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 4
+        width: 34
+        height: 41
+      alignment: 9
+      pivot: {x: 0.50586116, y: 0.5291682}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d699b883b37d024dae4160ff615d46d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_119
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 327
+        width: 41
+        height: 40
+      alignment: 9
+      pivot: {x: 0.51511735, y: 0.6859535}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94be17d49da5b7e428ae1de825966c1f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_120
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 241
+        width: 42
+        height: 41
+      alignment: 9
+      pivot: {x: 0.6475823, y: 0.31858045}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b99dc345c299d140922cddddd656ef0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_12
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 4
+        width: 38
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5258139, y: 0.50000036}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66aa2c4918ee57a42807028013c1bd42
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zubat_15
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 5
+        width: 35
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df21afa34e851e345aa630f08879241e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

@@ -10,20 +10,18 @@ using UnityEngine;
 public class DemonIdle : MonoBehaviour
 {
     public int blood = 200;
-    public int damage = 20;
-    public int wakeRange = 5; // nếu player nằm trong bán kính 5cm so với quái thì quái sẽ xuất hiện
 
     public float delayDieTime = 1f; // thời gian chờ animation death
-    public float delayAttackTime = 0.2f;
 
-    public int faceDirection = 1; // hướng nhìn ban đầu của demon. Nếu mặt demon hướng về bên trái thì set -1, ngược lại set 1
+    public float movedLength = 0; // khoảng cách di chuyển so với vị trí ban đầu
+    public float maxLength = 3; // khoảng cách di chuyển tối đa
+    public int faceDirection = -1; //  Nếu mặt demon hướng về bên trái thì set -1, ngược lại set 1
+    public int moveDirection = 1;
+    Player player;
+    Area area;
 
-    public bool isAttaking = false;
-    public bool isAwaking = false;
 
     public Animator anim;
-    AutoControlDemon control;
-    Player player = FindObjectOfType<Player>();
 
     public void setBlood(int blood)
     {
@@ -35,7 +33,7 @@ public class DemonIdle : MonoBehaviour
         return this.blood;
     }
 
-    public void Damage(int damage)
+    public void TakeDamage(int damage)
     {
         this.blood -= damage;
     }
@@ -44,76 +42,39 @@ public class DemonIdle : MonoBehaviour
     private void Awake()
     {
         anim = GetComponent<Animator>();
-        control = FindObjectOfType<AutoControlDemon>();
+        moveDirection = faceDirection;
+        player = FindObjectOfType<Player>();
+        area = GetComponentInChildren<Area>();
     }
 
-    void Update()
+    public void Death()
     {
-        RangeCheck();
-        anim.SetBool("Awake", isAwaking);
+        Destroy(gameObject);
+    }
 
-        // cập nhật hướng nhìn của demon
-        Vector3 scale = transform.localScale;
-        if (player.transform.position.x > this.transform.position.x) // nếu vị trí x của người chơi lớn hơn demon
-        {
-            scale.x = faceDirection*Mathf.Abs(scale.x); // mặt demon hướng về bên phải
-        }
-        else scale.x = -(Mathf.Abs(scale.x))*faceDirection; // mặt demon hướng về bên trái
-        transform.localScale = scale; // cập nhật
-
+    void FixedUpdate()
+    {
+        Vector3 rem = transform.localScale;
+        // mặt hướng ngược lại so với faceDirection
+        if (moveDirection != faceDirection) rem.x = -(Mathf.Abs(rem.x)); 
+        else rem.x = Mathf.Abs(rem.x); // mặt hướng cùng với faceDirection
+        transform.localScale = rem;
 
         if (this.blood <= 0)
         {
             anim.SetBool("isDied", true);
+            //anim.SetBool("isRunning", false); // bật animation di chuyển
             delayDieTime -= Time.deltaTime;
             if (delayDieTime <= 0)
             {
-                Destroy(gameObject);
-                control.SetDemonDied(true);
+                Death();
             }
         }
-
-        else if (isAwaking && isAttaking)
+        if (area.isInRange)
         {
-            delayAttackTime -= Time.deltaTime; // cập nhật thời gian đợi còn lại
-            if (delayAttackTime <= 0) // nếu hết thời gian đợi thì cho phép tấn công
-            { // nếu đến lúc tấn công
-                anim.SetBool("isAttaking", isAttaking); // bật animation tấn công
-                delayAttackTime = 0.2f; // cập nhật lại delayTime cho lần sau
-                Player player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
-                player.SendMessageUpwards("Damage", damage); // gửi damage cho player
-            }
-        }
-    }
-
-    void RangeCheck()
-    {
-        float distance = Vector2.Distance(transform.position, player.transform.position);
-        if (distance <= wakeRange) isAwaking = true;
-        else isAwaking = false;
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            isAttaking = true;
-        }
-    }
-
-    private void OnCollisionStay2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            isAttaking = true;
-        }
-    }
-
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            isAttaking = false;
+            if (player.transform.position.x > gameObject.transform.position.x)
+                moveDirection = 1;
+            else moveDirection = -1;
         }
     }
 }

@@ -7,15 +7,15 @@ public class CameraFlow : MonoBehaviour
     [Range(0, 0.3f)] [SerializeField] private float smoothtimeX = .03f;
     [Range(0, 0.3f)] [SerializeField] private float smoothtimeY = .03f;
 
-    public GameObject player;
+    //public GameObject player;
     public Vector2 minpos, maxpos;
     public bool bound;
-
+    public Transform player;
     Vector2 velocity;
     // Start is called before the first frame update
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player");
+        //player = GameObject.FindGameObjectWithTag("Player");
     }
 
     // Update is called once per frame
