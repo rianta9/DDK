@@ -51,7 +51,7 @@ public class DemonMoveAround : MonoBehaviour
 
     public void Death()
     {
-        control.SetDemonDied(true);
+     //   control.SetDemonDied(true);
         Destroy(gameObject);
     }
 
