@@ -229,7 +229,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animatorTransitions: {fileID: 272064762}
   TimeWait: 1
-  SceneCanLoad: 3
+  SceneCanLoad: 1
 --- !u!1 &278949390
 GameObject:
   m_ObjectHideFlags: 0
