@@ -20,7 +20,7 @@ public class DemonMoveAround : MonoBehaviour
     public float delayRunTime = 0.2f; // thời gian đợi mỗi lần di chuyển
 
     public float movedLength = 0; // khoảng cách di chuyển so với vị trí ban đầu
-    public float maxLength = 3; // khoảng cách di chuyển tối đa
+    public float maxLength = 6; // khoảng cách di chuyển tối đa
     public int faceDirection = 1; //  Nếu mặt demon hướng về bên trái thì set -1, ngược lại set 1
     public int moveDirection = 1; // Hướng di chuyển. Nếu muốn đầu tiên demon di chuyển về bên trái thì set -1, ngược lại set 1
 
@@ -91,7 +91,6 @@ public class DemonMoveAround : MonoBehaviour
                     isRunning = false; // bật animation đứng yên
                     delayRunTime = Random.Range(2, 5); // cho demon đứng yên 2 đến 5s 
                     moveDirection *= -1; // cho demon đổi hướng
-                    maxLength = 6; // cập nhật maxLength
                     movedLength = 0; // reset movedlength
                 }
 
@@ -117,4 +116,14 @@ public class DemonMoveAround : MonoBehaviour
         else rem.x = Mathf.Abs(rem.x); // mặt hướng cùng với faceDirection
         transform.localScale = rem;
     }
+
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Wall")) // cho demon đổi hướng
+        {
+            if(collision.transform.position.y > transform.position.y) moveDirection *= -1;
+        }
+    }
+
 }

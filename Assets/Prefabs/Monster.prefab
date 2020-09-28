@@ -189,7 +189,7 @@ GameObject:
   - component: {fileID: 7194907007373257282}
   - component: {fileID: 7194907007373257286}
   - component: {fileID: 7194907007373257285}
-  - component: {fileID: 8989220734615110289}
+  - component: {fileID: 807520033}
   m_Layer: 10
   m_Name: Monster
   m_TagString: Enemy
@@ -327,7 +327,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.89, y: 2.34}
   m_EdgeRadius: 0
---- !u!114 &8989220734615110289
+--- !u!114 &807520033
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
