@@ -2394,7 +2394,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animatorTransitions: {fileID: 1449760264}
   TimeWait: 2
-  SceneCanLoad: 0
+  SceneCanLoad: 1
 --- !u!1001 &3080956655760517975
 PrefabInstance:
   m_ObjectHideFlags: 0

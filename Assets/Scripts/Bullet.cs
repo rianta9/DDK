@@ -36,7 +36,7 @@ public class Bullet : MonoBehaviour
 	{
 		if (hitInfo.CompareTag("Enemy") || hitInfo.CompareTag("Boss"))
 			hitInfo.SendMessageUpwards("TakeDamage", 10);
-		else if (hitInfo.CompareTag("ThanhGo")) ;
+		
 		else return;
 		
 		//if (hitInfo.CompareTag("Player") || hitInfo.CompareTag("NPC"))

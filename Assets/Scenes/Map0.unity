@@ -229,7 +229,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animatorTransitions: {fileID: 272064762}
   TimeWait: 1
-  SceneCanLoad: 1
+  SceneCanLoad: 2
 --- !u!1 &278949390
 GameObject:
   m_ObjectHideFlags: 0
@@ -3133,6 +3133,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1131428988}
     m_Modifications:
+    - target: {fileID: 6897974016051199452, guid: 8324695997cc9ca46a7723fba437146e,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 6897974016051199453, guid: 8324695997cc9ca46a7723fba437146e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3196,7 +3201,7 @@ PrefabInstance:
     - target: {fileID: 6897974016051199453, guid: 8324695997cc9ca46a7723fba437146e,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 43
+      value: -131
       objectReference: {fileID: 0}
     - target: {fileID: 6897974016051199453, guid: 8324695997cc9ca46a7723fba437146e,
         type: 3}
@@ -3216,7 +3221,7 @@ PrefabInstance:
     - target: {fileID: 6897974016051199453, guid: 8324695997cc9ca46a7723fba437146e,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6897974016051199453, guid: 8324695997cc9ca46a7723fba437146e,
         type: 3}
@@ -3226,7 +3231,7 @@ PrefabInstance:
     - target: {fileID: 6897974016051199453, guid: 8324695997cc9ca46a7723fba437146e,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6897974016051199453, guid: 8324695997cc9ca46a7723fba437146e,
         type: 3}
